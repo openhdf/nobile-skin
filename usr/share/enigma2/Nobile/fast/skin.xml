@@ -785,10 +785,6 @@
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
-		<widget source="menu" render="Pixmap" pixmap="Nobile/menu/aaf_logo.png" position="500,100" size="250,297">
-			<convert type="MenuEntryCompare">Aafpanel</convert>
-			<convert type="ConditionalShowHide"/>
-		</widget>
 		<widget source="menu" render="Pixmap" pixmap="Nobile/menu/projectvalerie.png" position="500,100" size="250,297">
 			<convert type="MenuEntryCompare">pvmc_mainmenu</convert>
 			<convert type="ConditionalShowHide"/>
