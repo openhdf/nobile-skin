@@ -785,6 +785,10 @@
 			<convert type="MenuEntryCompare">standby_restart_list</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget source="menu" render="Pixmap" pixmap="Nobile/menu/aaf_logo.png" position="500,100" size="250,297">
+			<convert type="MenuEntryCompare">Aafpanel</convert>
+			<convert type="ConditionalShowHide"/>
+		</widget>
 		<widget source="menu" render="Pixmap" pixmap="Nobile/menu/projectvalerie.png" position="500,100" size="250,297">
 			<convert type="MenuEntryCompare">pvmc_mainmenu</convert>
 			<convert type="ConditionalShowHide"/>
@@ -1667,6 +1671,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<ePixmap position="0,0" zPosition="-10" size="270,60" pixmap="Nobile/menu/zap.png"/>
 		<widget name="channel" position="15,10" size="100,42" font="Bold; 35" transparent="1" foregroundColor="black" backgroundColor="white" halign="center"/>
 		<widget name="number" position="115,10" size="140,42" halign="center" font="Bold; 35" foregroundColor="black" backgroundColor="white" transparent="1" shadowOffset="-2,-2" shadowColor="grey"/>
+	</screen>
+	<!--QuickEPG-->
+	<screen name="QuickEPG" position="center,530" size="1140,170" title="QuickEPG" flags="wfNoBorder">
+		<ePixmap position="0,0" zPosition="-2" size="1140,170" pixmap="Nobile/infobar.png" noWrap="0" />
+		<widget source="Service" render="Picon" position=" 58,73" size=" 102,62" transparent="0" zPosition="2" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Service" render="Picon" position="60,75" size="100,60" transparent="0" zPosition="2" alphatest="blend">
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Service" render="Label" position="6,19" size="1125,35" halign="center" font="Regular;26" valign="top" noWrap="1" transparent="1">
+			<convert type="ServiceName">Name</convert>
+		</widget>
+		<widget name="list" position="255,76" size="640,54" foregroundColor="black" backgroundColor="grey" transparent="1" itemHeight="27" zPosition="2"/>
+		<ePixmap pixmap="Nobile/buttons/red.png" position="208,132" size="35,27" alphatest="blend"/>
+		<widget name="key_red" position="251,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1"/>
+		<ePixmap pixmap="Nobile/buttons/green.png" position="392,132" size="35,27" alphatest="blend"/>
+		<widget name="key_green" position="436,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1"/>
+		<ePixmap pixmap="Nobile/buttons/yellow.png" position="591,132" size="35,27" alphatest="blend"/>
+		<widget name="key_yellow" position="637,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1"/>
+		<ePixmap pixmap="Nobile/buttons/blue.png" position="777,132" size="35,27" alphatest="blend"/>
+		<widget name="key_blue" position="822,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1"/>
 	</screen>
 	<!-- Virtual PIP Zap -->
 	<screen name="VirtualZap" backgroundColor="transparent" flags="wfNoBorder" position="center,570" size="1140,140" title="Virtual Zap" transparent="0">
