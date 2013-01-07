@@ -874,7 +874,7 @@
 		<widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="400,30" size="400,400" selectionPixmap="Nobile/menu/menusel.png" scrollbarMode="showNever" enableWrapAround="1" transparent="1">
+		<widget source="menu" render="Listbox" position="400,30" size="400,400" selectionPixmap="Nobile/menu/menusel.png" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [ MultiContentEntryText(pos = (0,5), size = (400,30), flags = RT_HALIGN_CENTER, text = 1) ],
 				"fonts": [gFont("Regular", 22)],
@@ -882,7 +882,7 @@
 				}
 			</convert>
 		</widget>
-		<widget source="menu" render="Listbox" position="40,100" size="330,240" scrollbarMode="showNever" selectionDisabled="1" foregroundColor="grey" backgroundColor="background" transparent="1">
+		<widget source="menu" render="Listbox" position="40,100" size="330,240" scrollbarMode="showOnDemand" selectionDisabled="1" foregroundColor="grey" backgroundColor="background" transparent="1">
 			<convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (0,0), size = (330,240), flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER|RT_WRAP, text = 2), # index 2 is the Description,
