@@ -51,13 +51,13 @@
 	</colors>
 	<fonts>
 		<font filename="Nobile/fonts/lcd.ttf" name="LCD" scale="100" />
-		<font filename="Nobile/fonts/Roboto-Bold.ttf" name="Console" scale="100" />
+		<!--font filename="Nobile/fonts/Roboto-Bold.ttf" name="Console" scale="100"/-->
+		<font filename="tuxtxt.ttf" name="Console" scale="100" />
 		<font filename="Nobile/fonts/nmsbd.ttf" name="Arial" scale="100" />
 		<font filename="Nobile/fonts/Roboto-Bold.ttf" name="Bold" scale="100" />
 		<font filename="Nobile/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
 		<font filename="Nobile/fonts/Roboto-Italic.ttf" name="Italic" scale="100" />
 		<font filename="Nobile/fonts/Symbols.ttf" name="Symbols" scale="100" />
-		<font filename="Nobile/fonts/HandelGotDBol.ttf" name="HandelGotDBol" scale="100" />
 	</fonts>
 	<subtitles>
 		<sub name="Subtitle_TTX" font="Regular;30" shadowColor="#40101010" shadowOffset="3,3" />
@@ -1179,16 +1179,16 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
 		<widget source="key_red" render="Label" position="80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
 		<widget source="key_green" render="Label" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
 	</screen>
-	<screen source="Title" name="Console" position="center,center" size="840,570" title="Command execution..." flags="wfNoBorder">
+	<screen name="Console" position="center,center" size="840,570" title="Command execution..." flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile/menu/menubg.png" />
-		<widget name="text" position="20,60" size="800,400" font="HandelGotDBol;16" backgroundColor="background" transparent="1" />
+		<widget name="text" position="20,60" size="800,400" font="Console;16" backgroundColor="background" transparent="1" />
 		<widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Default</convert>
 		</widget>
 		<widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" foregroundColor="white" backgroundColor="black" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<widget source="Title" render="Label" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1" />
+		<widget source="title" render="Label" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1" />
 	</screen>
 	<screen name="CrashlogAutoSubmitConfiguration" position="center,center" size="1100,605" title="CrashlogAutoSubmit settings" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile/menu/mainbg.png" />
