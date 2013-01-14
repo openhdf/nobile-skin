@@ -50,14 +50,14 @@
 		<color name="yellow" value="#00e5b243" />
 	</colors>
 	<fonts>
-		<font filename="Nobile/fonts/lcd.ttf" name="LCD" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/lcd.ttf" name="LCD" scale="100" />
 		<!--font filename="Nobile/fonts/Roboto-Bold.ttf" name="Console" scale="100"/-->
 		<font filename="tuxtxt.ttf" name="Console" scale="100" />
-		<font filename="Nobile/fonts/nmsbd.ttf" name="Arial" scale="100" />
-		<font filename="Nobile/fonts/Roboto-Bold.ttf" name="Bold" scale="100" />
-		<font filename="Nobile/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
-		<font filename="Nobile/fonts/Roboto-Italic.ttf" name="Italic" scale="100" />
-		<font filename="Nobile/fonts/Symbols.ttf" name="Symbols" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/nmsbd.ttf" name="Arial" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/Roboto-Bold.ttf" name="Bold" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/Roboto-Regular.ttf" name="Regular" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/Roboto-Italic.ttf" name="Italic" scale="100" />
+		<font filename="/usr/share/enigma2/Nobile/fonts/Symbols.ttf" name="Symbols" scale="100" />
 	</fonts>
 	<subtitles>
 		<sub name="Subtitle_TTX" font="Regular;30" shadowColor="#40101010" shadowOffset="3,3" />
