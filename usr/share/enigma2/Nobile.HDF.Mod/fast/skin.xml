@@ -123,7 +123,7 @@
 		<eLabel text="https://github.com/oe-alliance" position="409,471" size="354,28" font="Regular;19" transparent="1" zPosition="1"/>
 		<widget name="AboutScrollLabel" position="27,253" size="379,310" font="Regular;20" transparent="1" zPosition="1"/>
 		<ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend"/>
-		<eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="350,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1"/>
+		<eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1"/>
 	</screen>
 	<!--Extensionslist-->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ExtensionsList" position="center,center" size="840,570" title="Extensions">
