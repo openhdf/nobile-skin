@@ -123,7 +123,7 @@
 		<eLabel text="https://github.com/oe-alliance" position="409,471" size="354,28" font="Regular;19" transparent="1" zPosition="1"/>
 		<widget name="AboutScrollLabel" position="27,253" size="379,310" font="Regular;20" transparent="1" zPosition="1"/>
 		<ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend"/>
-		<eLabel text="Nobile.HDF.Mod Mod by koivo and henry" position="440,565" size="350,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1"/>
+		<eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="350,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1"/>
 	</screen>
 	<!--Extensionslist-->
 	<screen backgroundColor="transparent" flags="wfNoBorder" name="ExtensionsList" position="center,center" size="840,570" title="Extensions">
@@ -411,29 +411,9 @@
 		<widget source="session.Event_Next" render="Label" position="center,288" size="965,185" font="Regular;20" zPosition="2" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1">
 			<convert type="EventName">ExtendedDescription</convert>
 		</widget>
-		<!--widget source="session.CurrentService" render="Label" position="30,15" size="366,66" backgroundColor="darkgrey" foregroundColor="white" transparent="1" zPosition="2" font="Regular;12" halign="left" noWrap="1">
-			<convert type="PliExtraInfo">All</convert>
-		</widget>
-		<widget source="session.CurrentService" render="Label" position="170,15" size="416,26" backgroundColor="darkgrey" foregroundColor="white" transparent="1" zPosition="2" font="Regular;12" valign="right" halign="right" noWrap="1">
-			<convert type="CryptoInfo">All</convert>
-		</widget-->
 		<widget source="global.CurrentTime" render="Label" position="900,31" size="140,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
 			<convert type="ClockToText">Format:%d.%m.%Y</convert>
 		</widget>
-		<!--widget source="session.CurrentService" render="Label" zPosition="3" position="635,20" size="55,24" backgroundColor="grey" halign="right" font="Regular;16" foregroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoWidth</convert>
-		</widget>
-		<eLabel backgroundColor="grey" position="710,20" size="15,24" text="x" zPosition="3" font="Regular;16" foregroundColor="black" halign="center" transparent="1"/>
-		<widget source="session.CurrentService" render="Label" zPosition="3" position="740,20" size="55,24" backgroundColor="grey" halign="left" font="Regular;16" foregroundColor="black" transparent="1">
-			<convert type="ServiceInfo">VideoHeight</convert>
-		</widget>
-		<ePixmap position="650,40" zPosition="3" size="1000,70" pixmap="Nobile.HDF.Mod/bar_snr_osd.png" alphatest="on" />
-		<widget source="session.FrontendStatus" render="Progress" position="650,41" size="130,2" zPosition="4" pixmap="Nobile.HDF.Mod/bar_snr.png" transparent="1">
-			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-		<widget source="session.FrontendStatus" render="Label" position="695,45" zPosition="4" size="50,24" halign="center" font="Regular;16" foregroundColor="black" backgroundColor="grey" transparent="1" valign="bottom">
-			<convert type="FrontendInfo">SNR</convert>
-		</widget-->
 	</screen>
 	<!-- EMC -->
 	<screen name="EMCSelection" position="40,20" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="black">
@@ -486,14 +466,14 @@
 	</screen>
 	<screen name="EMCMediaCenter" position="center,610" size="1140,110" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
 		<!-- Time Analog -->
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
-			<convert type="ExtraNumTextNobile.HDF.Mod">minHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
+			<convert type="ExtraNumTextNobile">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1067,27" size="42,42" zPosition="2" foregroundColor="darkgrey2" alphatest="on">
-			<convert type="ExtraNumTextNobile.HDF.Mod">hourHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1067,27" size="42,42" zPosition="2" foregroundColor="darkgrey2" alphatest="on">
+			<convert type="ExtraNumTextNobile">hourHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1059,19" size="58,58" zPosition="4" alphatest="on" foregroundColor="grey">
-			<convert type="ExtraNumTextNobile.HDF.Mod">secHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1059,19" size="58,58" zPosition="4" alphatest="on" foregroundColor="grey">
+			<convert type="ExtraNumTextNobile">secHand</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="110,6" size="620,30" font="Regular; 28" valign="top" noWrap="1" backgroundColor="grey" transparent="1" foregroundColor="darkgrey2">
 			<convert type="ServiceName">Name</convert>
@@ -603,14 +583,14 @@
 	<screen name="MoviePlayer" position="center,610" size="1140,110" title="" flags="wfNoBorder" backgroundColor="transparent">
 		<ePixmap position="0,0" zPosition="-1" size="1140,93" pixmap="Nobile.HDF.Mod/infobar_movie.png" transparent="0"/>
 		<!-- Time Analog -->
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
-			<convert type="ExtraNumTextNobile.HDF.Mod">minHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
+			<convert type="ExtraNumTextNobile">minHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1067,27" size="42,42" zPosition="2" foregroundColor="darkgrey2" alphatest="on">
-			<convert type="ExtraNumTextNobile.HDF.Mod">hourHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1067,27" size="42,42" zPosition="2" foregroundColor="darkgrey2" alphatest="on">
+			<convert type="ExtraNumTextNobile">hourHand</convert>
 		</widget>
-		<widget source="global.CurrentTime" render="WatchesNobile.HDF.Mod" position="1059,19" size="58,58" zPosition="4" alphatest="on" foregroundColor="grey">
-			<convert type="ExtraNumTextNobile.HDF.Mod">secHand</convert>
+		<widget source="global.CurrentTime" render="WatchesNobile" position="1059,19" size="58,58" zPosition="4" alphatest="on" foregroundColor="grey">
+			<convert type="ExtraNumTextNobile">secHand</convert>
 		</widget>
 		<widget source="session.CurrentService" render="Label" position="104,6" size="613,30" font="Regular; 28" valign="top" noWrap="1" backgroundColor="grey" transparent="1" foregroundColor="darkgrey2">
 			<convert type="ServiceName">Name</convert>
