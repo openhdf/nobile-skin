@@ -382,6 +382,10 @@
 			<convert type="ValueRange">2,2</convert>
 			<convert type="ConditionalShowHide"/>
 		</widget>
+		<widget name="key_yellow" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_green" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_red" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_blue" position="0,0" size="0,0" transparent="1"/>
 	</screen>
 	<screen name="RecInfoBar" position="240,440" size="800,50" zPosition="-1" title="Records Info" backgroundColor="darkgrey2" flags="wfNoBorder" transparent="0">
 		<widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="40,36" zPosition="2" size="14,14" alphatest="on">
@@ -434,6 +438,13 @@
 		<widget source="session.FrontendStatus" render="Label" position="695,45" zPosition="4" size="50,24" halign="center" font="Regular;16" foregroundColor="black" backgroundColor="grey" transparent="1" valign="bottom">
 			<convert type="FrontendInfo">SNR</convert>
 		</widget>
+		<widget name="key_yellow" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_green" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_red" position="0,0" size="0,0" transparent="1"/>
+		<widget name="key_blue" position="0,0" size="0,0" transparent="1"/>
+		<widget name="channel" position="0,0" size="0,0" transparent="1"/>
+		<widget name="epg_description" position="0,0" size="0,0" transparent="1"/>
+		
 	</screen>
 	<!-- EMC -->
 	<screen name="EMCSelection" position="40,20" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="black">
@@ -1317,6 +1328,7 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
 	</screen>
 	<screen name="UnhandledKey" title="UnhandledKey" position="1100,50" size="34,45" backgroundColor="transparent" zPosition="100" flags="wfNoBorder">
 		<widget name="UnhandledKeyPixmap" pixmap="Nobile.HDF.Mod/unhand.png" position="0,0" size="34,45" alphatest="off"/>
+		<ePixmap position="0,0" size="64,64" pixmap="Nobile.HDF.Mod/unhand.png" transparent="1" />
 	</screen>
 	<screen name="EPGSelection" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
 		<ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png"/>
@@ -4653,4 +4665,20 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="key_blue" position="880,680" zPosition="1" size="120,30" font="Regular;20" backgroundColor="grey" transparent="1"/>
 		<eLabel name="audio" position="66,34" size="610,40" text="webradioFS - Setup" font="Regular; 40" zPosition="3" transparent="1" backgroundColor="grey"/>
 	</screen>
+	<screen name="UnhandledKey" position="center,center" size="0,0" title="UnhandledKey" flags="wfNoBorder">
+		<widget name="UnhandledKeyPixmap" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+	</screen>
+	<screen name="Dish" position="center,center" size="0,0" title="UnhandledKey" flags="wfNoBorder">
+		<widget name="From" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="Goto" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="posFrom" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="posGoto" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="Dishpixmap" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="turnTime" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+	</screen>
+	<screen name="TimeshiftState" position="center,center" size="0,0" title="UnhandledKey" flags="wfNoBorder">
+		<widget name="statusicon" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="speed" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+		<widget name="state" position="0,0" zPosition="1" size="0,0" transparent="1"/>
+	</screen>	
 </skin>
