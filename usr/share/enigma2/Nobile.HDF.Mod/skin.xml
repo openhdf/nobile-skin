@@ -1713,10 +1713,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<eLabel text="Reception Settings" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1"/>
 		<widget name="config" position="30,80" size="780,380" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1"/>
 	</screen>
-	<screen name="NumberZap" flags="wfNoBorder" position="center,center" size="270,60" title="QuickZap">
-		<ePixmap position="0,0" zPosition="-10" size="270,60" pixmap="Nobile.HDF.Mod/menu/zap.png"/>
-		<widget name="channel" position="15,10" size="100,42" font="Bold; 35" transparent="1" foregroundColor="black" backgroundColor="white" halign="center"/>
-		<widget name="number" position="115,10" size="140,42" halign="center" font="Bold; 35" foregroundColor="black" backgroundColor="white" transparent="1" shadowOffset="-2,-2" shadowColor="grey"/>
+	<screen name="NumberZap" position="center,center" size="300,100" title="Channel">
+		<widget name="channel" position="35,center" size="110,45" halign="left" font="Regular;30" />
+		<widget name="number" position="130,center" size="110,45" halign="right" font="Regular;30" />
 	</screen>
 	<!--QuickEPG-->
 	<screen name="QuickEPG" position="center,530" size="1140,170" title="QuickEPG" flags="wfNoBorder">
