@@ -341,6 +341,9 @@
 			<convert type="EventTime">Duration</convert>
 			<convert type="ClockToText">InMinutes</convert>
 		</widget>
+		<widget source="session.CurrentService" render="Label" position="1038,120" size="100,20" font="Regular;14" halign="center" foregroundColor="black" backgroundColor="grey" transparent="1">
+			<convert type="ServiceOrbitalPosition">Full</convert>
+		</widget>
 		<!-- Turner Status -->
 		<eLabel text="A" position="1051,50" zPosition="1" size="20,22" font="Regular;14" halign="center" foregroundColor="darkgrey" backgroundColor="grey" transparent="1"/>
 		<eLabel text="B" position="1071,50" zPosition="1" size="20,22" font="Regular;14" halign="center" foregroundColor="darkgrey" backgroundColor="grey" transparent="1"/>
