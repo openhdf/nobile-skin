@@ -440,14 +440,7 @@
 		</widget>
 		<widget source="session.FrontendStatus" render="Label" position="695,45" zPosition="4" size="50,24" halign="center" font="Regular;16" foregroundColor="black" backgroundColor="grey" transparent="1" valign="bottom">
 			<convert type="FrontendInfo">SNR</convert>
-		</widget>
-		<widget name="key_yellow" position="0,0" size="0,0" transparent="1"/>
-		<widget name="key_green" position="0,0" size="0,0" transparent="1"/>
-		<widget name="key_red" position="0,0" size="0,0" transparent="1"/>
-		<widget name="key_blue" position="0,0" size="0,0" transparent="1"/>
-		<widget name="channel" position="0,0" size="0,0" transparent="1"/>
-		<widget name="epg_description" position="0,0" size="0,0" transparent="1"/>
-		
+		</widget>		
 	</screen>
 	<!-- EMC -->
 	<screen name="EMCSelection" position="40,20" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="black">
