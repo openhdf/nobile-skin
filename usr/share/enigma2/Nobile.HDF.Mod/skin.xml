@@ -1024,7 +1024,7 @@
     <widget source="global.CurrentTime" render="Label" position="1150,32" size="80,28" font="Bold;25" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget name="list" foregroundColor="darkgrey2" backgroundColor="grey" position="50,70" size="660,590" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" colorServiceDescription="black" colorServiceDescriptionSelected="white" picServiceEventProgressbar="Nobile.HDF.Mod/progcl.png" foregroundColorServiceNotAvail="#777777" serviceItemHeight="28" serviceNumberFont="Regular;18" serviceNameFont="Bold;22" serviceInfoFont="Regular;22" transparent="1" />
+    <widget name="list" foregroundColor="darkgrey2" backgroundColor="grey" position="50,70" size="660,590" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" colorServiceDescription="black" colorServiceDescriptionSelected="white" picServiceEventProgressbar="Nobile.HDF.Mod/progcl.png" foregroundColorServiceNotAvail="grey" serviceItemHeight="28" serviceNumberFont="Regular;18" serviceNameFont="Bold;22" serviceInfoFont="Regular;22" transparent="1" />
     <widget source="ServiceEvent" render="Label" position="750,28" size="330,30" font="Bold;24" halign="left" foregroundColor="white" backgroundColor="darkgrey2" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
@@ -1076,7 +1076,7 @@
     <eLabel text="Radio" position="270,20" size="800,43" font="Regular;35" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget source="Title" render="Label" position="30,70" size="1040,28" font="Regular;23" backgroundColor="background" transparent="1" />
     <eLabel position="30,105" size="1040,2" backgroundColor="grey" />
-    <widget name="list" position="30,114" size="1040,300" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_1040_30.png" colorServiceDescription="grey" colorServiceDescriptionSelected="grey" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="grey" foregroundColorServiceNotAvail="#777777" serviceItemHeight="30" serviceNumberFont="Regular;21" serviceNameFont="Regular;23" serviceInfoFont="Regular;21" transparent="1" />
+    <widget name="list" position="30,114" size="1040,300" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_1040_30.png" colorServiceDescription="grey" colorServiceDescriptionSelected="grey" colorEventProgressbar="blue" colorEventProgressbarSelected="blue" colorEventProgressbarBorder="grey" colorEventProgressbarBorderSelected="grey" foregroundColorServiceNotAvail="grey" serviceItemHeight="30" serviceNumberFont="Regular;21" serviceNameFont="Regular;23" serviceInfoFont="Regular;21" transparent="1" />
     <eLabel position="30,420" size="1040,2" backgroundColor="grey" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="40,430" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="300,430" size="35,27" alphatest="blend" />
