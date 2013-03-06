@@ -783,7 +783,15 @@
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="Nobile.HDF.Mod/menu/timer.png" position="500,100" size="260,260">
-      <convert type="MenuEntryCompare">timer_edit</convert>
+      <convert type="MenuEntryCompare">timer_menu</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="Nobile.HDF.Mod/menu/media.png" position="500,100" size="260,260">
+      <convert type="MenuEntryCompare">yamp_music_player</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="menu" render="Pixmap" pixmap="Nobile.HDF.Mod/menu/media.png" position="500,100" size="260,260">
+      <convert type="MenuEntryCompare">webradioFS</convert>
       <convert type="ConditionalShowHide" />
     </widget>
     <widget source="menu" render="Pixmap" pixmap="Nobile.HDF.Mod/menu/scart.png" position="500,100" size="260,260">
