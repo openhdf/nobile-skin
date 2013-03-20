@@ -498,6 +498,8 @@
     </widget>
   </screen>
   <screen name="EMCMediaCenter" position="center,610" size="1140,110" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <!-- Time Analog -->
     <widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
       <convert type="ExtraNumTextNobile">minHand</convert>
@@ -559,6 +561,8 @@
     </widget>
   </screen>
   <screen name="EnhancedMovieCenterMenu" position="center,center" size="680,500" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <eLabel text="EMC Menü" position="385,430" size="280,45" font="Regular; 40" halign="right" backgroundColor="grey" transparent="1" foregroundColor="black" />
     <ePixmap position="0,0" zPosition="-10" size="680,500" pixmap="Nobile.HDF.Mod/menu/menu_emc.png" />
     <widget name="config" position="12,5" size="655,300" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" backgroundColor="black" transparent="1" />
@@ -573,6 +577,8 @@
     <widget source="session.CurrentService" render="Label" position="0,0" size="132,1">
       <convert type="ServicePosition">Summary</convert>
     </widget>
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="center,center" zPosition="-10" size="1200,660" pixmap="Nobile.HDF.Mod/menu/menubg_m.png" alphatest="on" />
@@ -584,6 +590,8 @@
     <widget source="global.CurrentTime" render="Label" position="150,50" size="140,25" font="Bold;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <!-- mediaplayer -->
     <eLabel text="Media Player" position="505,605" size="700,45" font="Bold; 40" halign="right" backgroundColor="white" transparent="1" shadowOffset="-3,-3" shadowColor="grey" foregroundColor="black" />
     <widget name="filelist" position="75,95" size="420,500" itemHeight="25" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="Nobile.HDF.Mod/menu/menusel_420_25.png" backgroundColor="background" transparent="1" />
@@ -614,6 +622,8 @@
   </screen>
   <!-- Movieplayer infobar -->
   <screen name="MoviePlayer" position="center,610" size="1140,110" title="" flags="wfNoBorder" backgroundColor="transparent">
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <ePixmap position="0,0" zPosition="-1" size="1140,93" pixmap="Nobile.HDF.Mod/infobar_movie.png" transparent="0" />
     <!-- Time Analog -->
     <widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
@@ -2672,6 +2682,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="key_green" render="Label" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="DVDPlayer" position="70,580" size="1140,110" title="InfoBar" flags="wfNoBorder">
+	<widget name="statusicon" position="20,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <ePixmap position="0,0" zPosition="-1" size="1140,110" pixmap="Nobile.HDF.Mod/infobarmovie.png" />
     <eLabel text="Audio:" position="20,15" size="60,24" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget name="audioLabel" position="85,15" size="70,24" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" />
@@ -4802,8 +4814,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="turnTime" position="0,0" zPosition="1" size="0,0" transparent="1" />
   </screen>
   <screen name="TimeshiftState" position="center,center" size="0,0" title="UnhandledKey" flags="wfNoBorder">
-    <widget name="statusicon" position="0,0" zPosition="1" size="0,0" transparent="1" />
-    <widget name="speed" position="0,0" zPosition="1" size="0,0" transparent="1" />
+	<widget name="statusicon" position="20,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <!--widget name="statusicon" position="0,0" zPosition="1" size="0,0" transparent="1" />
+    <widget name="speed" position="0,0" zPosition="1" size="0,0" transparent="1" /-->
     <widget name="state" position="0,0" zPosition="1" size="0,0" transparent="1" />
   </screen>
   
