@@ -105,6 +105,22 @@
     <color name="WindowTitleForeground" color="una0a0a0" />
     <color name="WindowTitleBackground" color="un6c" />
   </windowstyle>
+	<screen name="MenuRed1Panel">
+		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on" />
+		<widget name="key_red" position="0,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
+	</screen>
+	<screen name="MenuGreen1Panel">
+		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on" />
+		<widget name="key_green" position="140,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
+	</screen>
+	<screen name="MenuYellow1Panel">
+		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on" />
+		<widget name="key_yellow" position="280,e-50" zPosition="1" size="145,50" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
+	</screen>
+	<screen name="MenuBlue1Panel">
+		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on" />
+		<widget name="key_blue" position="420,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
+	</screen>
   <!--About-->
   <screen name="About" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
@@ -2048,7 +2064,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="scan_progress" position="150,210" size="600,15" borderWidth="1" borderColor="grey" transparent="1" />
     <widget name="servicelist" position="150,240" size="600,300" itemHeight="30" selectionDisabled="1" transparent="1" />
   </screen>
-  <screen name="ServiceInfo" position="center,center" size="1100,605" title="Serviceinfo" flags="wfNoBorder">
+  <screen name="ServiceInfo" position="center,center" size="1100,605" title="ServiceInfo" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/menu_timer.png" />
     <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
@@ -2056,8 +2072,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <eLabel text="Serviceinfo" position="265,520" size="800,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
-    <widget name="infolist" position="30,70" size="1020,410" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
+    <eLabel text="ServiceInfo" position="265,520" size="800,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <eLabel text="HbbTV URL:" position="30,450" size="150,32" font="Regular;23" halign="left" noWrap="1" backgroundColor="black" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="260,450" size="950,30" transparent="1" noWrap="1" zPosition="1" backgroundColor="background" font="Regular;23" valign="top" halign="left">
       <convert type="ServiceInfo">HasHBBTV</convert>
@@ -2070,6 +2085,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="green" position="265,557" size="190,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="yellow" position="494,557" size="130,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="blue" position="663,557" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
+	<widget name="infolist" position="30,70" size="1020,410" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
   </screen>
   <screen name="Setup" position="center,center" size="840,570" title="Setup" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
@@ -4820,8 +4836,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="speed" position="0,0" zPosition="1" size="0,0" transparent="1" /-->
     <widget name="state" position="0,0" zPosition="1" size="0,0" transparent="1" />
   </screen>
-  
-  
 	<screen name="AudioSelection" position="center,center" size="560,260" title="Audio">
 		<!--panel name="BasicTemplate" /-->
 		<widget name="config" position="50,10" size="500,150" scrollbarMode="showOnDemand" />
@@ -4864,7 +4878,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	</screen>
 
 	<screen name="NetworkMountsMenu" position="center,center" size="560,460">
-		<!--panel name="Red2Panel" /-->
 		<widget name="menulist" position="10,25" size="540,90" zPosition="10" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="Nobile.HDF.Mod/menu/net.png" position="center,center" size="250,180" alphatest="on" />
 		<widget source="introduction" render="Label" position="10,210" size="540,300" font="Regular;22" halign="center" valign="center" zPosition="3" transparent="1" />
@@ -4880,18 +4893,17 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 	</screen>
 	<screen name="NetworkFtp" position="center,center" size="560,460">
 		<widget name="lab1" position="20,30" size="300,80" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<!--panel name="Red1Panel" /-->
-		<panel name="Green1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="NetworkNfs" position="center,center" size="560,460">
 		<widget name="lab1" position="20,50" size="200,30" font="Regular;20" valign="center" transparent="0"/>
@@ -4899,9 +4911,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="lab2" position="20,100" size="200,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labstop" position="220,100" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="220,100" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
 	</screen>
 	<screen name="NetworkOpenvpn" position="center,center" size="560,460">
 		<widget name="lab1" position="20,90" size="150,30" font="Regular;20" valign="center" transparent="0"/>
@@ -4909,10 +4921,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 		<widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 	</screen>
 	<screen name="NetworkInadyn" position="center,center" size="560,460">
 		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
@@ -4933,15 +4945,15 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="sactive" position="10,250" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
 		<widget name="system" position="50,250" size="100,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labsys" position="160,250" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 	</screen>
 	<screen name="NetworkInadynSetup" position="center,center" size="560,460">
 		<widget name="config" position="10,50" size="540,240" scrollbarMode="showOnDemand" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="270,500" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<panel name="Red1Panel" />
+		<panel name="MenuRed1Panel" />
 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="10,433" zPosition="4" size="35,25" alphatest="on" transparent="1" />
 	</screen>
 	<screen name="InadynLog" position="center,center" size="590,460">
@@ -4952,7 +4964,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
 		<widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="Green1Panel" />
+		<panel name="MenuGreen1Panel" />
 	</screen>
 	<screen name="NetworkuShare" position="center,center" size="590,460">
 		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
@@ -4983,10 +4995,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="dlna" position="250,400" size="200,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="dlnainactive" position="470,400" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
 		<widget name="dlnaactive" position="470,400" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 		<eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Regular;18" halign="right" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
@@ -4996,8 +5008,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="NetworkuShareSetup" position="center,center" size="560,460">
 		<widget name="config" position="10,50" size="420,240" scrollbarMode="showOnDemand" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="500,430" size="440,350" transparent="1" alphatest="on" />
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 		<ePixmap pixmap="skin_default/buttons/key_text.png" position="30,400" zPosition="4" size="35,25" alphatest="on" transparent="1" />
 	</screen>
 	<screen name="NetworkInadynLog" position="center,center" size="560,460">
@@ -5036,10 +5048,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="dlna" position="250,300" size="200,30" font="Regular;20" valign="center" transparent="1"/>
 		<widget name="dlnainactive" position="470,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
 		<widget name="dlnaactive" position="470,300" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
-		<panel name="Yellow1Panel" />
-		<panel name="Blue1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
+		<panel name="MenuYellow1Panel" />
+		<panel name="MenuBlue1Panel" />
 		<eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1"/>
 		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
 			<convert type="ClockToText">Default</convert>
@@ -5049,8 +5061,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<screen name="MiniDLNASetup" position="center,center" size="560,460">
 		<widget name="config" position="10,10" size="420,240" scrollbarMode="showOnDemand" />
 		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on" />
-		<panel name="Red1Panel" />
-		<panel name="Green1Panel" />
+		<panel name="MenuRed1Panel" />
+		<panel name="MenuGreen1Panel" />
 		<!--ePixmap pixmap="skin_default/buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1" /-->
 	</screen>
 	<screen name="ShowClock" position="1023,23" size="220,60" zPosition="10" backgroundColor="transpWhite" flags="wfNoBorder">
