@@ -122,6 +122,25 @@
 		<widget name="key_blue" position="420,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
 	</screen>
   <!--About-->
+  <screen name="AboutOE" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
+    <widget source="Title" render="Label" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
+    <widget source="global.CurrentTime" render="Label" halign="left" position="40,25" size="80,25" font="Regular; 23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="lab1" render="Label" position="29,86" size="369,35" font="Regular;30" transparent="1" zPosition="1" />
+    <widget source="lab2" render="Label" position="29,142" size="370,25" font="Regular;19" transparent="1" zPosition="1" />
+    <widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="OPEN SOURCE" position="410,400" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/openhdf" position="410,438" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/oe-alliance" position="409,471" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="27,253" size="379,310" font="Regular;20" transparent="1" zPosition="1" />
+    <ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend" />
+    <eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+  </screen>
   <screen name="About" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
     <widget source="Title" render="Label" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
@@ -2480,6 +2499,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="key_red" render="Label" position="80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget source="key_yellow" render="Label" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
+  
+  
   <!-- CDInfo -->
   <screen name="CDInfo" position="center,center" size="840,605" title="CDInfo" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/setupbg.png" />
