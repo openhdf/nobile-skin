@@ -459,6 +459,12 @@
     <widget source="session.CurrentService" render="Label" position="170,15" size="416,26" backgroundColor="darkgrey" foregroundColor="white" transparent="1" zPosition="2" font="Regular;12" valign="right" halign="right" noWrap="1">
       <convert type="CryptoInfo">All</convert>
     </widget>
+	<!--widget source="session.CurrentService" render="Label" position="900,480" size="150,20" zPosition="3" font="Regular;17" backgroundColor="grey" halign="right" foregroundColor="black" transparent="1" noWrap="1">
+		<convert type="DMCHDCamdInfo">Camd</convert>
+    </widget-->
+	<widget source="session.CurrentService" render="Label" font="Regular; 15" position="40,480" size="1000,20" halign="right" zPosition="50" backgroundColor="grey" foregroundColor="black" transparent="1" noWrap="1" valign="center">
+		<convert type="DMCHDCaidDisplay">Default</convert>
+	</widget>
     <widget source="global.CurrentTime" render="Label" position="900,31" size="140,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
