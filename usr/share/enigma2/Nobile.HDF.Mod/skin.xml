@@ -462,9 +462,6 @@
 	<widget source="session.CurrentService" render="Label" font="Regular; 15" position="40,480" size="1000,20" halign="right" zPosition="50" backgroundColor="grey" foregroundColor="black" transparent="1" noWrap="1" valign="center">
 		<convert type="DMCHDCaidDisplay">Default</convert>
 	</widget>
-	<!--widget source="session.CurrentService" render="Label" position="900,480" size="150,20" zPosition="3" font="Regular;17" backgroundColor="grey" halign="right" foregroundColor="black" transparent="1" noWrap="1">
-		<convert type="DMCHDCamdInfo">Camd</convert>
-    </widget-->
     <widget source="global.CurrentTime" render="Label" position="900,31" size="140,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
@@ -4371,52 +4368,52 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
   </screen>
   <!-- YAMP -->
-  <screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-    <ePixmap name="bg" position="0,0" size="1280,720" pixmap="Nobile.HDF.Mod/menu/nbg_home.png" zPosition="-3" />
-    <widget name="title" position="66,34" size="610,40" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular; 40" valign="center" halign="left" />
-    <widget source="global.CurrentTime" render="Label" position="1118,16" size="150,30" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-      <convert type="ClockToText">Format:%-H:%M</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1099,53" size="169,20" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-    </widget>
-    <widget name="leftContentTitle" position="50,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
-    <widget name="filelist" position="50,135" size="560,325" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" />
-    <widget name="rightContentTitle" position="660,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
-    <widget name="playlist" position="660,135" size="560,325" foregroundColor="white" backgroundColor="black" selectionDisabled="1" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" />
-    <widget name="songtitle" position="35,494" size="571,25" foregroundColor="white" backgroundColor="black" font="Regular; 20" valign="center" transparent="1" halign="center" zPosition="2" />
-    <widget source="session.CurrentService" render="Label" position="252,546" size="120,25" font="Regular; 20" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" valign="top" zPosition="2">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
-    <eLabel text="Artist" position="657,470" size="74,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-    <widget name="artist" position="735,470" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" noWrap="1" zPosition="2" />
-    <eLabel text="Album" position="659,500" size="73,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-    <widget name="album" position="735,500" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-    <eLabel text="Year" position="659,530" size="74,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-    <widget name="year" position="735,530" size="180,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-    <eLabel text="Genre" position="659,560" size="75,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
-    <widget name="genre" position="735,560" size="355,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
-    <widget name="coverArt" pixmap="Nobile.HDF.Mod/no_coverArt.png" position="1100,465" size="120,120" transparent="1" alphatest="blend" zPosition="2" />
-    <widget source="session.CurrentService" render="Progress" position="100,529" size="440,10" foregroundColor="white" backgroundColor="white" borderWidth="2" borderColor="white" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="35,524" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="center" halign="right" zPosition="2">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="545,524" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="top" halign="center" zPosition="2">
-      <convert type="ServicePosition">Remaining</convert>
-    </widget>
-    <widget name="repeat" pixmaps="Nobile.HDF.Mod/merlin/repeat_off.png,Nobile.HDF.Mod/merlin/repeat.png" position="1050,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
-    <widget name="shuffle" pixmaps="Nobile.HDF.Mod/merlin/shuffle_off.png,Nobile.HDF.Mod/merlin/shuffle.png" position="1130,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="70,680" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="360,680" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="650,680" size="35,27" alphatest="blend" zPosition="1" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="940,680" size="35,27" alphatest="blend" />
-    <widget name="key_red" position="110,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-    <widget name="key_green" position="400,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-    <widget name="key_yellow" position="690,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-    <widget name="key_blue" position="980,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-  </screen>
+<screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+  <ePixmap name="bg" position="0,center" size="1334,720" pixmap="Nobile.HDF.Mod/menu/nbg_home.png" zPosition="-3" />
+  <widget name="title" position="66,34" size="610,50" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular; 40" valign="center" halign="left" />
+  <widget source="global.CurrentTime" render="Label" position="1118,16" size="150,30" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
+	<convert type="ClockToText">Format:%-H:%M</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" position="1099,53" size="169,20" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
+	<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+  </widget>
+  <widget name="leftContentTitle" position="50,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
+  <widget name="filelist" position="50,135" size="560,312" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" itemHeight="22" />
+  <widget name="rightContentTitle" position="660,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
+  <widget name="playlist" position="660,135" size="560,312" foregroundColor="white" backgroundColor="black" selectionDisabled="1" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" itemHeight="22" />
+  <widget name="songtitle" position="35,482" size="571,30" foregroundColor="white" backgroundColor="black" font="Regular; 24" valign="center" transparent="1" halign="center" zPosition="2" />
+  <widget source="session.CurrentService" render="Label" position="264,538" size="120,25" font="Regular; 22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" valign="top" zPosition="2">
+	<convert type="ServicePosition">Length</convert>
+  </widget>
+  <eLabel text="Artist" position="650,460" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
+  <widget name="artist" position="760,460" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" noWrap="1" zPosition="2" />
+  <eLabel text="Album" position="650,490" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
+  <widget name="album" position="760,490" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
+  <eLabel text="Year" position="650,520" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
+  <widget name="year" position="760,520" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
+  <eLabel text="Genre" position="650,550" size="98,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
+  <widget name="genre" position="760,550" size="357,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
+  <widget name="coverArt" pixmap="Nobile.HDF.Mod/no_coverArt.png" position="1100,440" size="145,145" transparent="1" alphatest="blend" zPosition="1" />
+  <widget source="session.CurrentService" render="Progress" position="100,521" size="440,10" foregroundColor="white" backgroundColor="white" borderWidth="2" borderColor="white" transparent="1" zPosition="2">
+	<convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="35,514" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="center" halign="right" zPosition="2">
+	<convert type="ServicePosition">Position</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="545,514" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="top" halign="center" zPosition="2">
+	<convert type="ServicePosition">Remaining</convert>
+  </widget>
+  <widget name="repeat" pixmaps="Nobile.HDF.Mod/merlin/repeat_off.png,Nobile.HDF.Mod/merlin/repeat.png" position="1050,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
+  <widget name="shuffle" pixmaps="Nobile.HDF.Mod/merlin/shuffle_off.png,Nobile.HDF.Mod/merlin/shuffle.png" position="1130,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
+  <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="70,677" size="35,27" alphatest="blend" />
+  <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="360,677" size="35,27" alphatest="blend" />
+  <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="650,677" size="35,27" alphatest="blend" zPosition="1" />
+  <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="940,677" size="35,27" alphatest="blend" />
+  <widget name="key_red" position="110,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+  <widget name="key_green" position="400,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+  <widget name="key_yellow" position="690,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+  <widget name="key_blue" position="980,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+</screen>
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="C  o  o  l    C  h  a  n  n  e  l    G  u  i  d  e" position="519,5" size="480,30" font="Regular;26" foregroundColor="black" backgroundColor="grey" shadowColor="#000000" halign="center" transparent="1" />
     <widget name="date" position="37,3" size="180,30" font="Regular;26" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
