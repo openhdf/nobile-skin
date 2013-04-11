@@ -1936,7 +1936,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="list" position="30,60" size="780,400" scrollbarMode="showOnDemand" backgroundColor="background" selectionPixmap="Nobile.HDF.Mod/menu/menusel_800_50.png" transparent="1" />
     <widget name="text" position="0,0" size="0,0" />
   </screen>
-  <screen name="PositionerSetup" position="center,center" size="1100,605" title="Positioner setup..." flags="wfNoBorder">
+  <!--screen name="PositionerSetup" position="center,center" size="1100,605" title="Positioner setup..." flags="wfNoBorder">
     <ePixmap position="1,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/menu_timer.png" />
     <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
@@ -1965,7 +1965,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="symbolrate_value" position="780,440" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
     <eLabel text="FEC:" position="620,475" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
     <widget name="fec_value" position="780,475" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  </screen>
+  </screen-->
   <screen name="RecordPathsSettings" position="center,center" size="840,570" title="Recording paths..." flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
     <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
