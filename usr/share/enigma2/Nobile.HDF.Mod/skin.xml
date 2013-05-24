@@ -4451,7 +4451,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget name="timeline_text" position="9,48" size="1192,30" foregroundColor="background_tux" backgroundColor="darkgrey2" transparent="1" />
-    <widget name="list" position="30,87" size="1228,480" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="30,87" size="1228,480" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="0" />
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -4511,8 +4511,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="Event" render="Label" position="488,90" zPosition="1" size="772,166" font="Regular;20" foregroundColor="black" backgroundColor="grey" transparent="1" valign="top">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget name="timeline_text" position="9,276" size="1192,30" foregroundColor="grey" backgroundColor="darkgrey2" transparent="1" font="Regular; 20" />
-    <widget name="list" position="40,313" size="1222,360" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="1" />
+    <widget name="timeline_text" position="9,276" size="1192,30" foregroundColor="background_tux" backgroundColor="darkgrey2" transparent="1" font="Regular; 20" />
+    <widget name="list" position="40,313" size="1222,360" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="0" />
     <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -4711,7 +4711,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget name="timeline_text" position="9,277" size="1193,30" foregroundColor="white" backgroundColor="darkgrey2" transparent="1" font="Regular; 20" />
-    <widget name="list" position="40,313" size="1200,360" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="darkgrey2" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="40,313" size="1200,360" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="darkgrey2" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="0" />
     <widget name="timeline0" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,320" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -4742,7 +4742,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget name="timeline_text" position="9,48" size="1194,30" foregroundColor="background_tux" backgroundColor="darkgrey2" transparent="1" />
-    <widget name="list" position="40,85" size="1200,480" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="1" />
+    <widget name="list" position="40,85" size="1200,480" CoolPiconFontCol="#FFFFFF" CoolNoPiconBackCol="#aaaaaa" CoolTVBackCol="#aaaaaa" CoolBackCol="#aaaaaa" CoolTVBackColSel="#aaaaaa" CoolNowFontCol="#FFFFFF" CoolNowBackCol="#aaaaaa" CoolNowBackColSel="#aaaaaa" CoolNowFontColSel="#000000" CoolFontCol="#FFFFFF" CoolFontColSel="#000000" CoolBorderColR="#999999" CoolBorderColL="#999999" scrollbarMode="showNever" transparent="0" />
     <widget name="timeline0" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline1" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
     <widget name="timeline2" position="0,140" zPosition="1" size="0,0" pixmap="skin_default/timeline.png" />
@@ -5131,7 +5131,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	 <!-- Screensaver -->
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
-		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="630,96" alphatest="on" zPosition="1"/>
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="1050,160" alphatest="on" zPosition="1"/>
 	</screen>
 	 <!-- MediaInfo -->
 	<screen name="mediaInfo" position="center,center" size="1047,515" title="MediaInfo" flags="wfNoBorder">
