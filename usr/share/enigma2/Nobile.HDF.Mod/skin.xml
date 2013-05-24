@@ -5128,4 +5128,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_yellow" render="Label" position="440,523" size="139,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
 		<widget source="key_blue" render="Label" position="624,523" size="191,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
 	</screen> 
+	 <!-- Screensaver -->
+	<screen name="Screensaver" position="fill" flags="wfNoBorder">
+		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="1050,160" alphatest="on" zPosition="1"/>
+	</screen>
 </skin>
