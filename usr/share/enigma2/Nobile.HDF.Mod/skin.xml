@@ -536,8 +536,8 @@
     </widget>
   </screen>
   <screen name="EMCMediaCenter" position="center,610" size="1140,110" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-	<!--widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" /-->
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <!-- Time Analog -->
     <widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
       <convert type="ExtraNumTextNobile">minHand</convert>
@@ -598,14 +598,9 @@
       <convert type="ConditionalShowHide" />
     </widget>
   </screen>
-	<screen name="PVRState" position="92,50" zPosition="2" size="88,88" backgroundColor="transparent" flags="wfNoBorder" transparent="0">
-		<ePixmap position="0,0" zPosition="1" size="88,88" pixmap="skin_default/screens/pvr-bg.png" />
-		<widget name="statusicon" position="18,12" zPosition="3" size="50,50" alphatest="on" pixmaps="skin_default/icons/play_large.png,skin_default/icons/pause_large.png,skin_default/icons/stop_large.png,skin_default/icons/forward_large.png,skin_default/icons/backward_large.png,skin_default/icons/slow_large.png" />
-		<widget name="speed" position="0,60" size="80,15" font="Regular;17" halign="right" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
-	</screen>
   <screen name="EnhancedMovieCenterMenu" position="center,center" size="680,500" flags="wfNoBorder" backgroundColor="transparent">
-	<!--widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" /-->
-	<!--widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" /-->
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <eLabel text="EMC Menü" position="385,430" size="280,45" font="Regular; 40" halign="right" backgroundColor="grey" transparent="1" foregroundColor="black" />
     <ePixmap position="0,0" zPosition="-10" size="680,500" pixmap="Nobile.HDF.Mod/menu/menu_emc.png" />
     <widget name="config" position="12,5" size="655,300" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" backgroundColor="black" transparent="1" />
@@ -620,8 +615,8 @@
     <widget source="session.CurrentService" render="Label" position="0,0" size="132,1">
       <convert type="ServicePosition">Summary</convert>
     </widget>
-	<!--widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" /-->
+	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="center,center" zPosition="-10" size="1200,660" pixmap="Nobile.HDF.Mod/menu/menubg_m.png" alphatest="on" />
@@ -1503,6 +1498,28 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget name="key_green" position="325,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_yellow" position="575,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_blue" position="825,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+  </screen>
+  <screen name="EventViewSimple" position="center,center" size="1047,542" title="EventViewSimple" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1047,542" pixmap="Nobile.HDF.Mod/menu/eventview.png" backgroundColor="white" transparent="1" />
+    <widget source="global.CurrentTime" render="Label" position="928,16" size="80,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="900,41" size="140,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget name="channel" position="35,21" size="340,30" font="Bold;28" halign="left" foregroundColor="white" backgroundColor="darkgrey" transparent="1" />
+    <widget name="datetime" position="620,16" size="200,28" font="Bold;21" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+    <widget name="duration" position="620,39" size="340,28" font="Bold;21" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
+    <widget name="epg_description" position="45,74" size="980,430" font="Regular;24" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="40,507" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="285,507" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="535,507" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="785,507" size="35,27" alphatest="blend" />
+    <widget name="key_red" position="75,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="325,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_yellow" position="575,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_blue" position="825,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+	<widget name="FullDescription" position="0,0" size="0,0" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
   </screen>
   <screen name="genuineDreambox" position="center,center" size="840,605" title="Genuine Dreambox" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/setupbg.png" />
@@ -5136,7 +5153,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	 <!-- Screensaver -->
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
-		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="383,225" alphatest="on" zPosition="1"/>
+		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="1050,160" alphatest="on" zPosition="1"/>
 	</screen>
 	 <!-- MediaInfo -->
 	<screen name="mediaInfo" position="center,center" size="1047,515" title="MediaInfo" flags="wfNoBorder">
