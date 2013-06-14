@@ -1939,12 +1939,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <eLabel text="Plugin browser" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
+    <eLabel text="P-Browser" position="105,475" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="list" position="30,60" size="780,400" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" selectionPixmap="Nobile.HDF.Mod/menu/menusel_800_50.png" transparent="1" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,520" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="255,520" size="35,27" alphatest="blend" />
+	<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="495,520" size="35,27" alphatest="blend" />
     <widget name="red" position="50,521" size="200,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
     <widget name="green" position="290,521" size="300,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
+	<widget name="blue" position="530,521" size="300,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
   </screen>
   <screen name="PluginDownloadBrowser" position="center,center" size="840,570" title="Downloadable plugins" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
@@ -1958,36 +1960,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="list" position="30,60" size="780,400" scrollbarMode="showOnDemand" backgroundColor="background" selectionPixmap="Nobile.HDF.Mod/menu/menusel_800_50.png" transparent="1" />
     <widget name="text" position="0,0" size="0,0" />
   </screen>
-  <!--screen name="PositionerSetup" position="center,center" size="1100,605" title="Positioner setup..." flags="wfNoBorder">
-    <ePixmap position="1,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/menu_timer.png" />
-    <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
-    <eLabel text="Positioner setup..." position="265,520" size="800,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
-    <widget name="list" position="200,60" size="700,180" itemHeight="30" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" backgroundColor="background" transparent="1" />
-    <widget name="red" position="50,250" size="250,100" backgroundColor="red" halign="center" valign="center" font="Regular;21" />
-    <widget name="green" position="300,250" size="250,100" backgroundColor="green" halign="center" valign="center" font="Regular;21" />
-    <widget name="yellow" position="550,250" size="250,100" backgroundColor="yellow" halign="center" valign="center" font="Regular;21" />
-    <widget name="blue" position="800,250" size="250,100" backgroundColor="blue" halign="center" valign="center" font="Regular;21" />
-    <widget name="snr_db" position="300,370" size="200,25" halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="SNR:" position="210,405" size="80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="snr_bar" position="300,407" size="200,21" borderWidth="1" transparent="1" />
-    <widget name="snr_percentage" position="520,405" size="80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="BER:" position="210,440" size="80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="ber_bar" position="300,442" size="200,21" borderWidth="1" transparent="1" />
-    <widget name="ber_value" position="520,440" size="80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="Lock:" position="210,475" size="80,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="lock_state" position="300,475" size="200,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="Frequency:" position="620,405" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="frequency_value" position="780,405" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="Symbolrate:" position="620,440" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="symbolrate_value" position="780,440" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <eLabel text="FEC:" position="620,475" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-    <widget name="fec_value" position="780,475" size="150,25" font="Regular;21" backgroundColor="background" transparent="1" />
-  </screen-->
   <screen name="RecordPathsSettings" position="center,center" size="840,570" title="Recording paths..." flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
     <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
