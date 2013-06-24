@@ -496,6 +496,7 @@
     <widget name="list" position="50,64" size="612,270" itemHeight="28" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="450" CoolFolderSize="455" CoolTitleColor="1" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="1" CoolProgressPos="900" CoolBarPos="500" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="Nobile.HDF.Mod/menu/sel700x30.png" DefaultColor="black" UnwatchedColor="black" WatchingColor="black" FinishedColor="black" RecordingColor="black" BackColorSel="black" foregroundColorSelected="white" backgroundColor="grey" foregroundColor="black" scrollbarMode="showNever" transparent="1" />
     <widget name="wait" position="50,290" size="612,50" zPosition="1" font="Regular;32" halign="center" valign="center" foregroundColor="black" backgroundColor="black" transparent="1" />
     <widget source="session.VideoPicture" render="Pig" position="708,32" size="440,230" zPosition="3" backgroundColor="transparent" />
+    <widget name="Cover" position="708,32" size="440,230" zPosition="5" alphatest="blend" />
     <widget source="Service" render="Label" position="250,375" size="485,25" font="Bold; 20" halign="left" valign="center" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="EMCEventName">Name</convert>
     </widget>
@@ -556,7 +557,7 @@
     </widget>
     <!-- Infobar Cover -->
     <!-- <widget name="Cover" position="50,320" size="230,230" zPosition="1" alphatest="on" /> -->
-    <widget name="Cover" position="1,1" size="72,90" zPosition="1" alphatest="on" />
+    <widget name="Cover" position="708,32" size="440,230" zPosition="4" alphatest="on" />
     <!-- <widget name="Cover" position="50,593" size="71,71" zPosition="1" alphatest="on" /> -->
     <ePixmap position="0,0" zPosition="-1" size="1140,93" pixmap="Nobile.HDF.Mod/infobar_movie.png" transparent="0" />
     <widget source="session.CurrentService" render="Label" font="Regular;18" position="747,10" size="55,18" halign="right" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1">
