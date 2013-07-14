@@ -5123,6 +5123,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget source="key_yellow" render="Label" position="440,523" size="139,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
 		<widget source="key_blue" render="Label" position="624,523" size="191,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
 	</screen> 
+	 <!-- Enigma Restart -->
+        <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
+			<widget name="text" position="center,600" size="720,100" font="Bold;24" halign="center" transparent="1" />
+        </screen>
 	 <!-- Screensaver -->
 	<screen name="Screensaver" position="fill" flags="wfNoBorder">
 		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
