@@ -556,9 +556,7 @@
       <convert type="ServiceName">Provider</convert>
     </widget>
     <!-- Infobar Cover -->
-    <!-- <widget name="Cover" position="50,320" size="230,230" zPosition="1" alphatest="on" /> -->
-    <widget name="Cover" position="708,32" size="440,230" zPosition="4" alphatest="on" />
-    <!-- <widget name="Cover" position="50,593" size="71,71" zPosition="1" alphatest="on" /> -->
+    <widget name="Cover" position="2,2" size="60,89" zPosition="4" alphatest="on" transparent="1" backgroundColor="grey" />
     <ePixmap position="0,0" zPosition="-1" size="1140,93" pixmap="Nobile.HDF.Mod/infobar_movie.png" transparent="0" />
     <widget source="session.CurrentService" render="Label" font="Regular;18" position="747,10" size="55,18" halign="right" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1">
       <convert type="ServiceInfo">VideoWidth</convert>
