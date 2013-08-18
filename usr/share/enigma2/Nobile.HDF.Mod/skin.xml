@@ -2159,6 +2159,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
+<!-- Subservice selection -->
+  <screen name="SubserviceSelection" position="center,center" size="840,570" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
+	<ePixmap alphatest="off" pixmap="Nobile.HDF.Mod/menu/menubg.png" position="0,0" size="840,570" zPosition="-1" />
+    <eLabel text="Subservices" position="center,15" size="800,38" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
+	<widget name="list" position="center,70" size="770,400" enableWrapAround="1" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
   <screen name="Subtitles" position="center,center" size="840,570" title="Subtitle selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
     <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
