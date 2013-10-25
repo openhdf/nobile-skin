@@ -1434,33 +1434,31 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <ePixmap position="0,0" size="64,64" pixmap="Nobile.HDF.Mod/unhand.png" transparent="1" />
   </screen>
   <screen name="EPGSelection" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
-    <widget source="global.CurrentTime" render="Label" position="20,20" size="80,25" font="Regular;23" foregroundColor="black" backgroundColor="white" transparent="1">
+    <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg_event.png" />
+    <widget source="global.CurrentTime" render="Label" position="20,25" size="80,25" font="Regular;25" foregroundColor="white" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="blue" backgroundColor="white" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="110,25" size="140,25" font="Regular;25" foregroundColor="white" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <eLabel text="Single EPG" position="270,20" size="800,43" font="Regular;35" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
-    <widget source="Service" render="Label" position="40,70" size="520,32" font="Regular;26" backgroundColor="background" transparent="1">
+    <eLabel text="Single EPG" position="270,20" size="800,43" font="Bold;35" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
+    <widget source="Service" render="Label" position="270,25" size="520,32" font="Regular;25" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <ePixmap position="570,72" size="70,30" pixmap="Nobile.HDF.Mod/buttons/left.png" alphatest="blend" />
-    <ePixmap position="650,72" size="70,30" pixmap="Nobile.HDF.Mod/buttons/right.png" alphatest="blend" />
-    <eLabel position="20,105" size="700,2" backgroundColor="grey" />
-    <widget name="list" position="20,110" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" backgroundColor="background" transparent="1" render="Picon" />
-    <ePixmap position="720,66" zPosition="-9" size="28,508" pixmap="Nobile.HDF.Mod/menu/seph.png" />
-    <widget source="Event" render="Label" position="755,80" size="320,460" font="Regular;20" foregroundColor="grey" backgroundColor="background" transparent="1">
+    <eLabel position="25,80" size="715,2" backgroundColor="grey" />
+	<eLabel position="744,90" size="2,460" backgroundColor="grey" />
+    <widget name="list" position="30,90" size="705,450" itemHeight="30" scrollbarMode="showNever" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_25.png" foregroundColor="black" backgroundColor="white" transparent="1" render="Picon" />
+    <widget source="Event" render="Label" position="755,90" size="320,456" font="Regular;20" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="30,570" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="830,570" size="35,27" alphatest="blend" />
-    <widget name="key_red" position="80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget name="key_green" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget name="key_yellow" position="600,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget name="key_blue" position="880,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="30,560" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="290,560" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="550,560" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="830,560" size="35,27" alphatest="blend" />
+    <widget name="key_red" position="80,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="340,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_yellow" position="600,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_blue" position="880,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="EPGSelectionMulti" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
