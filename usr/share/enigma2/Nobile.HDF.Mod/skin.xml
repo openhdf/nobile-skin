@@ -214,14 +214,14 @@
   </screen>
   <screen name="SystemNetworkInfo" position="center,center" size=" 840,605" title="SystemInfo" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
-    <widget source="Title" render="Label" backgroundColor="background" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
+    <widget source="Title" render="Label" backgroundColor="background" font="Bold; 40" position="265,525" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
     <widget source="global.CurrentTime" render="Label" halign="left" position="40,25" size="80,25" font="Regular; 23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" foregroundColor="white" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <widget name="AboutScrollLabel" position="29,82" size="458,197" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
+    <widget name="AboutScrollLabel" position="39,102" size="458,397" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
     <widget source="LabelBSSID" render="Label" position="28,292" size="200,25" valign="left" font="Regular;20" transparent="1" />
     <widget source="LabelESSID" render="Label" position="29,329" size="200,25" valign="center" font="Regular;20" transparent="1" />
     <widget source="LabelQuality" render="Label" position="29,367" size="200,25" valign="center" font="Regular;20" transparent="1" />
@@ -236,8 +236,8 @@
     <widget source="enc" render="Label" position="203,474" size="310,25" valign="center" font="Regular;20" transparent="1" />
     <widget source="IFtext" render="Label" position="31,509" size="120,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
     <widget source="IF" render="Label" position="139,508" size="375,21" zPosition="10" font="Regular;20" halign="left" transparent="1" />
-    <widget source="Statustext" render="Label" position="31,537" size="115,21" zPosition="10" font="Regular;20" backgroundColor="white" foregroundColor="black" halign="left" transparent="1" />
-    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="149,539" zPosition="10" size="15,16" transparent="0" alphatest="on" />
+    <widget source="Statustext" render="Label" position="31,557" size="115,21" zPosition="10" font="Regular;20" backgroundColor="white" foregroundColor="black" halign="left" transparent="1" />
+    <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="149,559" zPosition="10" size="15,16" transparent="0" alphatest="on" />
   </screen>
   <screen name="AboutReleaseNotes" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size=" 840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
