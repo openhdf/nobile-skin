@@ -5044,12 +5044,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="infotext" position="20,20" font="Regular;20" size="500,400" scrollbarMode="showOnDemand" />
 		<ePixmap pixmap="skin_default/buttons/key-exit.png" position="10,426" zPosition="4" size="65,45" alphatest="on" transparent="1" />
 	</screen>
-	<screen name="uShareSelection" position="center,center" size="560,460" zPosition="3">
-		<panel name="Red2Panel" />
-		<panel name="Green2Panel" />
-		<panel name="Yellow2Panel" />
-		<widget name="checkList" position="5,50" size="550,350" transparent="1" scrollbarMode="showOnDemand" />
-	</screen>
 	<screen name="NetworkMiniDLNA" position="center,center" size="590,460">
 		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
 		<widget name="labdisabled" position="280,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
