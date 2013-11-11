@@ -4364,7 +4364,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
   </screen>
   <!-- YAMP -->
-<screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+<!--screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
   <ePixmap name="bg" position="0,center" size="1334,720" pixmap="Nobile.HDF.Mod/menu/nbg_home.png" zPosition="-3" />
   <widget name="title" position="66,34" size="610,50" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular; 40" valign="center" halign="left" />
   <widget source="global.CurrentTime" render="Label" position="1118,16" size="150,30" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
@@ -4409,7 +4409,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
   <widget name="key_green" position="400,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
   <widget name="key_yellow" position="690,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
   <widget name="key_blue" position="980,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-</screen>
+</screen-->
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="C  o  o  l    C  h  a  n  n  e  l    G  u  i  d  e" position="519,5" size="480,30" font="Regular;26" foregroundColor="black" backgroundColor="grey" shadowColor="#000000" halign="center" transparent="1" />
     <widget name="date" position="37,3" size="180,30" font="Regular;26" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
