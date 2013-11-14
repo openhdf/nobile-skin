@@ -252,20 +252,14 @@
   </screen>
   <screen name="SoftwareUpdateChanges" position="center,center" size="840,605" title="SoftwareUpdateChanges" flags="wfNoBorder" backgroundColor="transpBlack">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
-    <widget source="Title" render="Label" backgroundColor="white" font="Regular; 35" position="384,11" size="443,55" transparent="1" halign="right" valign="center" zPosition="1" foregroundColor="black" />
-    <widget source="global.CurrentTime" render="Label" position=" 20,20" size=" 80,25" font="Regular;23" foregroundColor="black" backgroundColor="white" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="110,20" size="140,25" font="Regular;23" foregroundColor="blue" backgroundColor="white" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
+    <widget source="Title" render="Label" backgroundColor="white" font="Regular; 35" position="384,11" size="443,55" transparent="1" halign="center" valign="center" zPosition="1" foregroundColor="white" />
     <widget name="text" position="20,82" size="800,473" font="Regular;21" backgroundColor="black" transparent="0" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position=" 30,570" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="290,570" size="35,27" alphatest="blend" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="550,570" size="35,27" alphatest="blend" />
-    <widget name="key_red" position=" 80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget name="key_green" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <widget name="key_yellow" position="600,573" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position=" 30,550" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="290,550" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="550,550" size="35,27" alphatest="blend" />
+    <widget name="key_red" position=" 80,553" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="340,553" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_yellow" position="600,553" size="200,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <!--QuickEPG-->
   <screen name="QuickEPG" position="center,530" size="1140,170" title="QuickEPG" flags="wfNoBorder">
