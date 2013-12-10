@@ -3563,7 +3563,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <eLabel text="Select files/folders to backup..." position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
+    <eLabel text="Select files/folders" position="115,485" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="checkList" position="30,70" size="780,380" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,525" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="220,525" size="35,27" alphatest="blend" />
