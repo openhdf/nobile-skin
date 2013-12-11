@@ -1656,6 +1656,8 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
 				}
 			</convert>
     </widget>
+	<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="30,515" size="35,27" alphatest="blend" />
+	<widget name="key_blue" position="70,518" size="240,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="LocationBox" position="center,center" size="1100,605" title="Location Box" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
