@@ -2123,7 +2123,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="Setup" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget source="Title" render="Label" position="30,60" size="780,32" font="Regular;26" backgroundColor="background" transparent="1" />
     <eLabel position="30,95" size="780,2" backgroundColor="grey" />
-    <widget name="config" position="30,105" size="780,355" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
+    <widget name="config" position="30,105" size="780,335" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,520" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="250,520" size="35,27" alphatest="blend" />
     <widget source="key_red" render="Label" position="50,523" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
