@@ -1,4 +1,4 @@
-	<skin>
+<skin>
   <!-- Nobile_HDF_Mod CVS Dreambox Skin -->
   <!-- This skin and part of the graphics are based on Concinnity-3D Skin for DVB-Viewer made by MarkusK from DVBViewer community forum -->
   <output id="0">
@@ -33,15 +33,21 @@
     <color name="transpBlack" value="#80000000" />
     <color name="transpWhite" value="#77ffffff" />
     <color name="transpyellow" value="#33bab329" />
+    <color name="un141484" value="#00141484" />
+    <color name="un1f771f" value="#001f771f" />
     <color name="un20224f" value="#0020224f" />
     <color name="un2f4974" value="#002f4974" />
+    <color name="un4d5375" value="#004d5375" />
     <color name="un4e5a74" value="#004e5a74" />
+    <color name="un54111112" value="#54111112" />
     <color name="un5678a4" value="#005678a4" />
     <color name="un62e3c" value="#00062e3c" />
     <color name="un6c" value="#0000006c" />
     <color name="un800000" value="#00800000" />
     <color name="un808888" value="#00808888" />
+    <color name="una08500" value="#00a08500" />
     <color name="una0a0a0" value="#00a0a0a0" />
+    <color name="unaaaaaa" value="#00aaaaaa" />
     <color name="undcaaaa" value="#00dcaaaa" />
     <color name="undcdcdc" value="#00dcdcdc" />
     <color name="unff0000" value="#00ff0000" />
@@ -105,22 +111,22 @@
     <color name="WindowTitleForeground" color="una0a0a0" />
     <color name="WindowTitleBackground" color="un6c" />
   </windowstyle>
-	<screen name="MenuRed1Panel">
-		<ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on" />
-		<widget name="key_red" position="0,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />
-	</screen>
-	<screen name="MenuGreen1Panel">
-		<ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on" />
-		<widget name="key_green" position="140,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />
-	</screen>
-	<screen name="MenuYellow1Panel">
-		<ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on" />
-		<widget name="key_yellow" position="280,e-50" zPosition="1" size="145,50" font="Regular;20" halign="center" valign="center" backgroundColor="#a08500" transparent="1" />
-	</screen>
-	<screen name="MenuBlue1Panel">
-		<ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on" />
-		<widget name="key_blue" position="420,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="#141484" transparent="1" />
-	</screen>
+  <screen name="MenuRed1Panel">
+    <ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on" />
+    <widget name="key_red" position="0,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="EMCRecording" transparent="1" />
+  </screen>
+  <screen name="MenuGreen1Panel">
+    <ePixmap pixmap="buttons/green.png" position="140,e-40" size="140,40" alphatest="on" />
+    <widget name="key_green" position="140,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="un1f771f" transparent="1" />
+  </screen>
+  <screen name="MenuYellow1Panel">
+    <ePixmap pixmap="buttons/yellow.png" position="280,e-40" size="140,40" alphatest="on" />
+    <widget name="key_yellow" position="280,e-50" zPosition="1" size="145,50" font="Regular;20" halign="center" valign="center" backgroundColor="una08500" transparent="1" />
+  </screen>
+  <screen name="MenuBlue1Panel">
+    <ePixmap pixmap="buttons/blue.png" position="420,e-40" size="140,40" alphatest="on" />
+    <widget name="key_blue" position="420,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="un141484" transparent="1" />
+  </screen>
   <!--About-->
   <screen name="AboutOE" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
@@ -202,16 +208,50 @@
     <eLabel text="/media/hdd Used" position="599,458" size="200,25" font="Regular; 23" halign="center" backgroundColor="black" transparent="1" />
   </screen>
   <screen name="SystemMemoryInfo" position="center,center" size=" 840,605" title="SystemInfo" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
-    <widget source="Title" render="Label" backgroundColor="background" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
-    <widget source="global.CurrentTime" render="Label" halign="left" position="40,25" size="80,25" font="Regular; 23" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" transparent="1">
-      <convert type="ClockToText">Format:%d.%m.%Y</convert>
-    </widget>
-    <widget name="AboutScrollLabel" position="32,88" size="458,376" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
-  </screen>
+  <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
+  <widget source="Title" render="Label" backgroundColor="background" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
+  <widget source="global.CurrentTime" render="Label" halign="left" position="40,25" size="80,25" font="Regular; 23" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Default</convert>
+  </widget>
+  <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" transparent="1">
+    <convert type="ClockToText">Format:%d.%m.%Y</convert>
+  </widget>
+  <ePixmap position="60,155" zPosition="1" size="50,50" pixmap="Nobile.HDF.Mod/icons/ram.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" position="160,155" size="550,20" borderWidth="2" borderColor="grey" zPosition="1" foregroundColor="red" transparent="1">
+  <convert type="ProgressDiskSpaceInfo">MemTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="160,180" size="600,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">MemTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,215" zPosition="1" size="50,50" pixmap="Nobile.HDF.Mod/icons/swap.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" position="160,215" size="550,20" borderWidth="2" borderColor="grey" zPosition="1" foregroundColor="red" transparent="1">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="160,240" size="600,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">SwapTotal,Full</convert>
+  </widget>
+  <ePixmap position="60,275" zPosition="1" size="50,50" pixmap="Nobile.HDF.Mod/icons/flash.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" position="160,275" size="550,20" borderWidth="2" borderColor="grey" zPosition="1" foregroundColor="red" transparent="1">
+    <convert type="ProgressDiskSpaceInfo">FleshInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="160,300" size="600,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">Flesh,Full</convert>
+  </widget>
+  <ePixmap position="60,395" zPosition="1" size="50,50" pixmap="Nobile.HDF.Mod/icons/usb.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" position="160,395" size="550,20" borderWidth="2" borderColor="grey" zPosition="1" foregroundColor="red" transparent="1">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="160,420" size="600,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">UsbInfo,Full</convert>
+  </widget>
+  <ePixmap position="60,335" zPosition="1" size="50,50" pixmap="Nobile.HDF.Mod/icons/hdd.png" alphatest="blend" />
+  <widget source="session.Event_Now" render="Progress" position="160,335" size="550,20" borderWidth="2" borderColor="grey" zPosition="1" foregroundColor="red" transparent="1">
+    <convert type="ProgressDiskSpaceInfo">HddInfo</convert>
+  </widget>
+  <widget source="session.CurrentService" render="Label" zPosition="6" position="160,360" size="600,26" halign="left" valign="center" font="Regular; 20" transparent="1" backgroundColor="background">
+    <convert type="ProgressDiskSpaceInfo">HddInfo,Full</convert>
+  </widget>
+</screen>
   <screen name="SystemNetworkInfo" position="center,center" size=" 840,605" title="SystemInfo" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
     <widget source="Title" render="Label" backgroundColor="background" font="Bold; 40" position="265,525" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
@@ -325,13 +365,13 @@
       </convert>
     </widget>
     <!-- update check icon -->
-	<ePixmap pixmap="icons/icon_update_off.png" position="977,18" size="20,20" zPosition="0" alphatest="blend" />
-	<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="977,18" size="20,20" zPosition="1" alphatest="blend" >
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
-	<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="977,18" size="20,20" zPosition="1" alphatest="blend" >
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
+    <ePixmap pixmap="icons/icon_update_off.png" position="977,18" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="977,18" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="977,18" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
     <!-- sendername -->
     <widget source="session.CurrentService" render="Label" position="170,10" size="440,34" font="Bold;28" noWrap="1" foregroundColor="black" backgroundColor="grey" transparent="1">
       <convert type="ServiceName">Name</convert>
@@ -461,9 +501,9 @@
     <widget source="session.CurrentService" render="Label" position="170,15" size="416,26" backgroundColor="darkgrey" foregroundColor="white" transparent="1" zPosition="2" font="Regular;12" valign="right" halign="right" noWrap="1">
       <convert type="CryptoInfo">All</convert>
     </widget>
-	<widget source="session.CurrentService" render="Label" font="Regular; 15" position="40,480" size="1000,20" halign="right" zPosition="50" backgroundColor="grey" foregroundColor="black" transparent="1" noWrap="1" valign="center">
-		<convert type="DMCHDCaidDisplay">Default</convert>
-	</widget>
+    <widget source="session.CurrentService" render="Label" font="Regular; 15" position="40,480" size="1000,20" halign="right" zPosition="50" backgroundColor="grey" foregroundColor="black" transparent="1" noWrap="1" valign="center">
+      <convert type="DMCHDCaidDisplay">Default</convert>
+    </widget>
     <widget source="global.CurrentTime" render="Label" position="900,31" size="140,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
@@ -482,13 +522,13 @@
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <!-- update check icon -->
-	<ePixmap pixmap="icons/icon_update_off.png" position="840,33" size="20,20" zPosition="0" alphatest="blend" />
-	<widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="840,33" size="20,20" zPosition="1" alphatest="blend" >
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
-	<widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="840,33" size="20,20" zPosition="1" alphatest="blend" >
-		<convert type="ConditionalShowHide">Blink</convert>
-	</widget>
+    <ePixmap pixmap="icons/icon_update_off.png" position="840,33" size="20,20" zPosition="0" alphatest="blend" />
+    <widget source="global.OnlineStableUpdateState" render="Pixmap" pixmap="icons/icon_stableupdate.png" position="840,33" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.OnlineUnstableUpdateState" render="Pixmap" pixmap="icons/icon_unstableupdate.png" position="840,33" size="20,20" zPosition="1" alphatest="blend">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
   </screen>
   <!-- EMC -->
   <screen name="EMCSelection" position="40,20" size="1280,720" title="Enhanced Movie Center" flags="wfNoBorder" backgroundColor="black">
@@ -547,8 +587,8 @@
     </widget>
   </screen>
   <screen name="EMCMediaCenter" position="center,610" size="1140,110" title="InfoBar" backgroundColor="transparent" flags="wfNoBorder">
-	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <!-- Time Analog -->
     <widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
       <convert type="ExtraNumTextNobile">minHand</convert>
@@ -608,8 +648,8 @@
     </widget>
   </screen>
   <screen name="EnhancedMovieCenterMenu" position="center,center" size="680,500" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <eLabel text="EMC Menü" position="385,430" size="280,45" font="Regular; 40" halign="right" backgroundColor="grey" transparent="1" foregroundColor="black" />
     <ePixmap position="0,0" zPosition="-10" size="680,500" pixmap="Nobile.HDF.Mod/menu/menu_emc.png" />
     <widget name="config" position="12,5" size="655,300" enableWrapAround="1" scrollbarMode="showOnDemand" halign="center" backgroundColor="black" transparent="1" />
@@ -624,8 +664,8 @@
     <widget source="session.CurrentService" render="Label" position="0,0" size="132,1">
       <convert type="ServicePosition">Summary</convert>
     </widget>
-	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
   </screen>
   <screen name="MediaPlayer" position="0,0" size="1280,720" title="MediaPlayer" backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="center,center" zPosition="-10" size="1200,660" pixmap="Nobile.HDF.Mod/menu/menubg_m.png" alphatest="on" />
@@ -637,8 +677,8 @@
     <widget source="global.CurrentTime" render="Label" position="150,50" size="140,25" font="Bold;23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-	<widget name="statusicon" position="30,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="30,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <!-- mediaplayer -->
     <eLabel text="Media Player" position="505,605" size="700,45" font="Bold; 40" halign="right" backgroundColor="white" transparent="1" shadowOffset="-3,-3" shadowColor="grey" foregroundColor="black" />
     <widget name="filelist" position="75,95" size="420,500" itemHeight="25" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="Nobile.HDF.Mod/menu/menusel_420_25.png" backgroundColor="background" transparent="1" />
@@ -669,8 +709,8 @@
   </screen>
   <!-- Movieplayer infobar -->
   <screen name="MoviePlayer" position="center,610" size="1140,110" title="" flags="wfNoBorder" backgroundColor="transparent">
-	<widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <ePixmap position="0,0" zPosition="-1" size="1140,93" pixmap="Nobile.HDF.Mod/infobar_movie.png" transparent="0" />
     <!-- Time Analog -->
     <widget source="global.CurrentTime" render="WatchesNobile" position="1062,22" size="52,52" zPosition="3" foregroundColor="darkgrey2" alphatest="on">
@@ -1440,7 +1480,7 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
       <convert type="ServiceName">Name</convert>
     </widget>
     <eLabel position="25,80" size="715,2" backgroundColor="grey" />
-	<eLabel position="744,90" size="2,460" backgroundColor="grey" />
+    <eLabel position="744,90" size="2,460" backgroundColor="grey" />
     <widget name="list" position="30,90" size="705,450" itemHeight="30" scrollbarMode="showNever" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_25.png" foregroundColor="black" backgroundColor="white" transparent="1" render="Picon" />
     <widget source="Event" render="Label" position="755,90" size="320,456" font="Regular;20" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
@@ -1526,7 +1566,7 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget name="key_green" position="325,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_yellow" position="575,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_blue" position="825,510" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-	<widget name="FullDescription" position="0,0" size="0,0" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
+    <widget name="FullDescription" position="0,0" size="0,0" font="Regular;22" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" />
   </screen>
   <screen name="genuineDreambox" position="center,center" size="840,605" title="Genuine Dreambox" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/setupbg.png" />
@@ -1656,8 +1696,8 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
 				}
 			</convert>
     </widget>
-	<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="30,515" size="35,27" alphatest="blend" />
-	<widget name="key_blue" position="70,518" size="240,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="30,515" size="35,27" alphatest="blend" />
+    <widget name="key_blue" position="70,518" size="240,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="LocationBox" position="center,center" size="1100,605" title="Location Box" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
@@ -1952,10 +1992,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="list" position="30,60" size="780,400" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" selectionPixmap="Nobile.HDF.Mod/menu/menusel_800_50.png" transparent="1" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,520" size="35,27" alphatest="blend" />
     <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="255,520" size="35,27" alphatest="blend" />
-	<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="495,520" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="495,520" size="35,27" alphatest="blend" />
     <widget name="red" position="50,521" size="200,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
     <widget name="green" position="290,521" size="300,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
-	<widget name="blue" position="530,521" size="300,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
+    <widget name="blue" position="530,521" size="300,26" zPosition="2" font="Regular;22" halign="left" foregroundColor="black" transparent="1" />
   </screen>
   <screen name="PluginDownloadBrowser" position="center,center" size="840,570" title="Downloadable plugins" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
@@ -2110,7 +2150,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="green" position="265,557" size="190,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="yellow" position="494,557" size="130,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="blue" position="663,557" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="white" transparent="1" />
-	<widget name="infolist" position="30,70" size="1020,410" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
+    <widget name="infolist" position="30,70" size="1020,410" itemHeight="40" selectionDisabled="1" scrollbarMode="showOnDemand" backgroundColor="background" transparent="1" />
   </screen>
   <screen name="Setup" position="center,center" size="840,570" title="Setup" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
@@ -2169,11 +2209,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
       <convert type="ServiceName">Name</convert>
     </widget>
   </screen>
-<!-- Subservice selection -->
+  <!-- Subservice selection -->
   <screen name="SubserviceSelection" position="center,center" size="840,570" title="Subservices" backgroundColor="transparent" flags="wfNoBorder">
-	<ePixmap alphatest="off" pixmap="Nobile.HDF.Mod/menu/menubg.png" position="0,0" size="840,570" zPosition="-1" />
+    <ePixmap alphatest="off" pixmap="Nobile.HDF.Mod/menu/menubg.png" position="0,0" size="840,570" zPosition="-1" />
     <eLabel text="Subservices" position="center,15" size="800,38" zPosition="1" font="Regular;28" halign="center" valign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
-	<widget name="list" position="center,70" size="770,400" enableWrapAround="1" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
+    <widget name="list" position="center,70" size="770,400" enableWrapAround="1" zPosition="1" scrollbarMode="showOnDemand" transparent="1" />
   </screen>
   <screen name="Subtitles" position="center,center" size="840,570" title="Subtitle selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,570" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
@@ -2494,8 +2534,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="key_red" render="Label" position="80,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget source="key_yellow" render="Label" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
-  
-  
   <!-- CDInfo -->
   <screen name="CDInfo" position="center,center" size="840,605" title="CDInfo" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/setupbg.png" />
@@ -2714,8 +2752,8 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget source="key_green" render="Label" position="340,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="DVDPlayer" position="70,580" size="1140,110" title="InfoBar" flags="wfNoBorder">
-	<widget name="statusicon" position="20,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
-	<widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
+    <widget name="statusicon" position="20,center" size="40,40" zPosition="3" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
+    <widget name="speed" position="70,48" size="80,15" font="Regular;17" halign="left" foregroundColor="infobar-frgrnd" backgroundColor="infobar_sunken" transparent="1" zPosition="4" />
     <ePixmap position="0,0" zPosition="-1" size="1140,110" pixmap="Nobile.HDF.Mod/infobarmovie.png" />
     <eLabel text="Audio:" position="20,15" size="60,24" font="Regular;20" backgroundColor="black" transparent="1" />
     <widget name="audioLabel" position="85,15" size="70,24" font="Regular;20" foregroundColor="yellow" backgroundColor="black" transparent="1" />
@@ -4360,7 +4398,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
   </screen>
   <!-- YAMP -->
-<!--screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
+  <!--screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
   <ePixmap name="bg" position="0,center" size="1334,720" pixmap="Nobile.HDF.Mod/menu/nbg_home.png" zPosition="-3" />
   <widget name="title" position="66,34" size="610,50" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular; 40" valign="center" halign="left" />
   <widget source="global.CurrentTime" render="Label" position="1118,16" size="150,30" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
@@ -4448,7 +4486,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="key_blue" position="1035,688" size="220,30" font="Regular;20" halign="left" valign="top" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
     <ePixmap position="0,0" zPosition="-10" size="1281,777" pixmap="Nobile.HDF.Mod/menu/CoolChannelGuide.png" transparent="1" />
   </screen>
-	<screen name="CoolTVGuide" position="center,center" size="1280,720" backgroundColor="background_tux" title="Cool TV Guide">
+  <screen name="CoolTVGuide" position="center,center" size="1280,720" backgroundColor="background_tux" title="Cool TV Guide">
     <eLabel text="Cool TV Guide" position="490,5" size="480,30" font="Regular;26" foregroundColor="black" backgroundColor="grey" halign="center" transparent="1" />
     <widget name="date" position="40,5" size="180,30" font="Regular;26" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="270,6" size="160,30" font="Regular;26" foregroundColor="black" backgroundColor="grey" halign="left" transparent="1">
@@ -4845,40 +4883,40 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <widget name="Dishpixmap" position="0,0" zPosition="1" size="0,0" transparent="1" />
     <widget name="turnTime" position="0,0" zPosition="1" size="0,0" transparent="1" />
   </screen>
-<screen name="TimeshiftState" position="center,e-250" zPosition="2" size="640,69" backgroundColor="transpBlack" flags="wfNoBorder">
-  <ePixmap position="0,0" zPosition="1" size="640,69" pixmap="menu/mail_sel.png" />
-  <widget source="session.CurrentService" render="Label" position="25,15" size="200,27" font="Regular;20" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey" zPosition="3" >
-   <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="e-145,15" size="120,27" font="Regular;20" halign="right" transparent="1" foregroundColor="black" backgroundColor="grey" zPosition="3" >
-   <convert type="ServicePosition">Length</convert>
-  </widget>
-  <widget name="PTSSeekBack" position="25,43" size="590,15" pixmap="slider_back.png" alphatest="on" zPosition="2"/>
-  <widget name="PTSSeekPointer" position="25,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" />
-   <widget source="session.CurrentService" render="Progress" position="25,43" size="590,15" zPosition="3" pixmap="slider.png" transparent="1">
-   <convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget name="statusicon" position="center,10" size="20,20" pixmaps="icons/ts_play.png,icons/ts_pause.png,icons/ts_stop.png,icons/ts_forward.png,icons/ts_backward.png,icons/ts_slow.png" zPosition="5" alphatest="on" />
-  <widget name="speed" position="380,10" size="80,20" font="Regular;17" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" zPosition="5" />
-</screen>
-	<screen name="AudioSelection" position="center,center" size="560,360" title="Audio">
-		<!--panel name="BasicTemplate" /-->
-		<widget name="config" position="50,10" size="500,180" scrollbarMode="showOnDemand" />
-		<widget source="key_red" render="Pixmap" pixmap="skin_default/buttons/key_red.png" position="10,10" size="35,25" alphatest="on">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="key_green" render="Pixmap" pixmap="skin_default/buttons/key_green.png" position="10,35" size="35,25" alphatest="on">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="key_yellow" render="Pixmap" pixmap="skin_default/buttons/key_yellow.png" position="10,60" size="35,25" alphatest="on">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<widget source="key_blue" render="Pixmap" pixmap="skin_default/buttons/key_blue.png" position="10,85" size="35,25" alphatest="on">
-			<convert type="ConditionalShowHide" />
-		</widget>
-		<ePixmap pixmap="skin_default/div-h.png" position="10,195" zPosition="10" size="560,2" />
-		<widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="10,208" size="540,200" zPosition="3" transparent="1" >
-			<convert type="TemplatedMultiContent">
+  <screen name="TimeshiftState" position="center,e-250" zPosition="2" size="640,69" backgroundColor="transpBlack" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="1" size="640,69" pixmap="menu/mail_sel.png" />
+    <widget source="session.CurrentService" render="Label" position="25,15" size="200,27" font="Regular;20" halign="left" transparent="1" foregroundColor="black" backgroundColor="grey" zPosition="3">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Label" position="e-145,15" size="120,27" font="Regular;20" halign="right" transparent="1" foregroundColor="black" backgroundColor="grey" zPosition="3">
+      <convert type="ServicePosition">Length</convert>
+    </widget>
+    <widget name="PTSSeekBack" position="25,43" size="590,15" pixmap="slider_back.png" alphatest="on" zPosition="2" />
+    <widget name="PTSSeekPointer" position="25,40" size="19,20" pixmap="position_pointer2.png" alphatest="on" zPosition="4" />
+    <widget source="session.CurrentService" render="Progress" position="25,43" size="590,15" zPosition="3" pixmap="slider.png" transparent="1">
+      <convert type="ServicePosition">Position</convert>
+    </widget>
+    <widget name="statusicon" position="center,10" size="20,20" pixmaps="icons/ts_play.png,icons/ts_pause.png,icons/ts_stop.png,icons/ts_forward.png,icons/ts_backward.png,icons/ts_slow.png" zPosition="5" alphatest="on" />
+    <widget name="speed" position="380,10" size="80,20" font="Regular;17" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" zPosition="5" />
+  </screen>
+  <screen name="AudioSelection" position="center,center" size="560,360" title="Audio">
+    <!--panel name="BasicTemplate" /-->
+    <widget name="config" position="50,10" size="500,180" scrollbarMode="showOnDemand" />
+    <widget source="key_red" render="Pixmap" pixmap="skin_default/buttons/key_red.png" position="10,10" size="35,25" alphatest="on">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="key_green" render="Pixmap" pixmap="skin_default/buttons/key_green.png" position="10,35" size="35,25" alphatest="on">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="key_yellow" render="Pixmap" pixmap="skin_default/buttons/key_yellow.png" position="10,60" size="35,25" alphatest="on">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="key_blue" render="Pixmap" pixmap="skin_default/buttons/key_blue.png" position="10,85" size="35,25" alphatest="on">
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <ePixmap pixmap="skin_default/div-h.png" position="10,195" zPosition="10" size="560,2" />
+    <widget source="streams" render="Listbox" scrollbarMode="showOnDemand" position="10,208" size="540,200" zPosition="3" transparent="1">
+      <convert type="TemplatedMultiContent">
 				{"templates":
 					{"default": (25, [ 
 						MultiContentEntryText(pos = (0, 0),   size = (35, 25),  font = 0, flags = RT_HALIGN_LEFT,  text = 1), # key,
@@ -4899,272 +4937,271 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 				"itemHeight": 25
 				}
 			</convert>
-		</widget>
-	</screen>
-
-	<screen name="NetworkMountsMenu" position="center,center" size="560,460">
-		<widget name="menulist" position="10,25" size="540,90" zPosition="10" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="Nobile.HDF.Mod/menu/net.png" position="center,center" size="250,180" alphatest="on" />
-		<widget source="introduction" render="Label" position="10,210" size="540,300" font="Regular;22" halign="center" valign="center" zPosition="3" transparent="1" />
-		<eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Regular;18" halign="right" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	</screen>
-	<screen name="NetworkServiceSetup" position="center,center" size="560,460">
-		<widget name="lab1" position="20,90" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labactive" position="180,90" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
-	</screen>
-	<screen name="NetworkFtp" position="center,center" size="560,460">
-		<widget name="lab1" position="20,30" size="300,80" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="MenuGreen1Panel" />
-	</screen>
-	<screen name="NetworkNfs" position="center,center" size="560,460">
-		<widget name="lab1" position="20,50" size="200,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labactive" position="220,50" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="20,100" size="200,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labstop" position="220,100" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="220,100" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-	</screen>
-	<screen name="NetworkOpenvpn" position="center,center" size="560,460">
-		<widget name="lab1" position="20,90" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labactive" position="180,90" size="250,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0"/>
-		<widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
-	</screen>
-	<screen name="NetworkInadyn" position="center,center" size="560,460">
-		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labdisabled" position="110,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labactive" position="110,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="360,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labrun" position="360,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
-		<widget name="time" position="10,50" size="330,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labtime" position="340,50" size="100,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="username" position="10,100" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labuser" position="160,100" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="password" position="10,150" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labpass" position="160,150" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="alias" position="10,200" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labalias" position="160,200" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="sinactive" position="10,250" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="sactive" position="10,250" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="system" position="50,250" size="100,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labsys" position="160,250" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
-	</screen>
-	<screen name="NetworkInadynSetup" position="center,center" size="560,460">
-		<widget name="config" position="10,50" size="540,240" scrollbarMode="showOnDemand" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="270,500" zPosition="1" size="440,350" transparent="1" alphatest="on" />
-		<panel name="MenuRed1Panel" />
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="10,433" zPosition="4" size="35,25" alphatest="on" transparent="1" />
-	</screen>
-	<screen name="InadynLog" position="center,center" size="590,460">
-		<widget name="infotext" position="10,10" size="590,410" font="Console;16" />
-	</screen>
-	<screen name="NetworkTelnet" position="center,center" size="560,460">
-		<widget name="lab1" position="20,30" size="300,80" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center"  halign="center" backgroundColor="red"/>
-		<widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center"  halign="center" backgroundColor="green"/>
-		<panel name="MenuGreen1Panel" />
-	</screen>
-	<screen name="NetworkuShare" position="center,center" size="590,460">
-		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labdisabled" position="110,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labactive" position="110,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="390,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labrun" position="390,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
-		<widget name="username" position="10,50" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labuser" position="160,50" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="iface" position="10,90" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labiface" position="160,90" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="port" position="10,130" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labport" position="160,130" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="telnetport" position="10,170" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labtelnetport" position="160,170" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="sharedir" position="10,210" size="150,60" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labsharedir" position="160,210" size="310,80" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="web" position="10,340" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="webinactive" position="200,340" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="webactive" position="200,340" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="telnet" position="10,400" size="180,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="telnetinactive" position="200,400" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="telnetactive" position="200,400" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="xbox" position="250,340" size="200,60" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="xboxinactive" position="470,340" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="xboxactive" position="470,340" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="dlna" position="250,400" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="dlnainactive" position="470,400" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="dlnaactive" position="470,400" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
-		<eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1"/>
-		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Regular;18" halign="right" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<ePixmap pixmap="skin_default/logos/hdf.png" position="2,435" size="210,25" alphatest="on" />
-	</screen>
-	<screen name="NetworkuShareSetup" position="center,center" size="560,460">
-		<widget name="config" position="10,50" size="420,240" scrollbarMode="showOnDemand" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="500,430" size="440,350" transparent="1" alphatest="on" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<ePixmap pixmap="skin_default/buttons/key_text.png" position="30,400" zPosition="4" size="35,25" alphatest="on" transparent="1" />
-	</screen>
-	<screen name="NetworkInadynLog" position="center,center" size="560,460">
-		<widget name="infotext" position="20,20" font="Regular;20" size="500,400" scrollbarMode="showOnDemand" />
-		<ePixmap pixmap="skin_default/buttons/key-exit.png" position="10,426" zPosition="4" size="65,45" alphatest="on" transparent="1" />
-	</screen>
-	<screen name="NetworkMiniDLNA" position="center,center" size="590,460">
-		<widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labdisabled" position="280,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labactive" position="280,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
-		<widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
-		<widget name="labstop" position="430,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
-		<widget name="labrun" position="430,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2"/>
-		<widget name="username" position="10,50" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labuser" position="160,50" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="iface" position="10,90" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labiface" position="160,90" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="port" position="10,130" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labport" position="160,130" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="serialno" position="10,170" size="150,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labserialno" position="160,170" size="310,30" font="Regular;20" valign="center" backgroundColor="#4D5375"/>
-		<widget name="sharedir" position="10,210" size="150,60" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="labsharedir" position="160,210" size="310,70" font="Regular;20" valign="top" backgroundColor="#4D5375"/>
-		<widget name="inotify" position="10,300" size="180,60" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="inotifyinactive" position="200,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="inotifyactive" position="200,300" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="tivo" position="10,360" size="180,60" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="tivoinactive" position="200,360" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="tivoactive" position="200,360" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<widget name="dlna" position="250,300" size="200,30" font="Regular;20" valign="center" transparent="1"/>
-		<widget name="dlnainactive" position="470,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32"  alphatest="on" />
-		<widget name="dlnaactive" position="470,300" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32"  alphatest="on" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<panel name="MenuYellow1Panel" />
-		<panel name="MenuBlue1Panel" />
-		<widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-	</screen>
-	<screen name="MiniDLNASetup" position="center,center" size="560,460">
-		<widget name="config" position="10,10" size="420,240" scrollbarMode="showOnDemand" />
-		<widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on" />
-		<panel name="MenuRed1Panel" />
-		<panel name="MenuGreen1Panel" />
-		<!--ePixmap pixmap="skin_default/buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1" /-->
-	</screen>
-	<screen name="ShowClock" position="1023,23" size="220,60" zPosition="10" backgroundColor="transpWhite" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="48,4" size="80,25" font="Bold; 24" halign="right" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="128,4" size="45,25" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
-			<convert type="ClockToText">Format::%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="0,29" size="220,30" font="Regular;19" halign="center" valign="center" foregroundColor="darkgrey3" transparent="1" noWrap="1" backgroundColor="transpWhite">
-			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-		</widget>
-	</screen>
-	<screen name="ShowClockPositioner" position="1023,23" size="220,60" zPosition="10" backgroundColor="transpWhite" flags="wfNoBorder">
-		<widget source="global.CurrentTime" render="Label" position="48,4" size="80,25" font="Bold; 24" halign="right" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="128,4" size="45,25" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
-			<convert type="ClockToText">Format::%S</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="0,29" size="220,30" font="Regular;19" halign="center" valign="center" foregroundColor="darkgrey3" transparent="1" noWrap="1" backgroundColor="transpWhite">
-			<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-		</widget>
-	</screen>
-	<screen name="ShowClockSetup" position="center,center" size="840,570" title="Show Clock Setup" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="833,558" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
-		<widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Default</convert>
-		</widget>
-		<widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
-			<convert type="ClockToText">Format:%d.%m.%Y</convert>
-		</widget>
-		<eLabel text="Setup" position="115,470" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
-		<widget source="Title" render="Label" position="30,60" size="780,32" font="Regular;26" backgroundColor="background" transparent="1" />
-	<!-- <eLabel text="Einstellung der Uhrzeit-Anzeige" position="30,60" size="780,32" font="Regular; 26" backgroundColor="background" transparent="1" /> -->
-		<eLabel position="30,95" size="780,2" backgroundColor="grey" />
-		<widget name="config" position="30,105" size="780,195" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
-	<!-- <widget name="config" position="30,105" size="780,355" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" /> -->
-		<eLabel position="30,308" size="780,2" backgroundColor="grey" />
-		<widget source="help" render="Label" position="30,316" size="780,140" font="Regular;21" transparent="1" backgroundColor="grey" zPosition="1" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,520" size="35,27" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="210,520" size="35,27" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="405,520" size="35,27" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="590,520" size="35,27" alphatest="blend" />
-		<widget source="key_red" render="Label" position="50,523" size="150,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
-		<widget source="key_green" render="Label" position="245,523" size="152,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
-		<widget source="key_yellow" render="Label" position="440,523" size="139,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
-		<widget source="key_blue" render="Label" position="624,523" size="191,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
-	</screen> 
-	 <!-- Enigma Restart -->
-        <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
-			<widget name="text" position="center,600" size="720,100" font="Bold;24" halign="center" transparent="1" />
-        </screen>
-	 <!-- Screensaver -->
-	<screen name="Screensaver" position="fill" flags="wfNoBorder">
-		<eLabel position="fill" backgroundColor="#54111112" zPosition="0"/>
-		<widget name="picture" pixmap="distro-logo.png" position="0,0" size="1050,160" alphatest="on" zPosition="1"/>
-	</screen>
-	 <!-- MediaInfo -->
-	<screen name="mediaInfo" position="center,center" size="1280,720" title="MediaInfo" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/cooltvbg.png" backgroundColor="grey" transparent="1" />
-		<eLabel text="MediaInfo" position="40,53" size="370,26" zPosition="1" font="Regular;24" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1" />
-		<widget name="pname" position="180,53" size="1000,30" zPosition="0" font="Regular;24" halign="right" transparent="1" foregroundColor="white" backgroundColor="grey" />
-		<widget name="pinfo" position="150,96" size="1214,30" zPosition="0" font="Regular;26" transparent="1" foregroundColor="black" />
-		<widget name="head" position="35,140" size="1214,25" backgroundColor="#00aaaaaa" zPosition="5" foregroundColor="black" font="Regular;23" halign="center"/>
-		<widget name="head2" position="40,590" size="1214,25" transparent="1" zPosition="1" foregroundColor="white" font="Regular;22" halign="left"/>
-		<widget name="dllist" position="35,170" size="1214,366" backgroundColor="#00aaaaaa" zPosition="5" foregroundColor="black" font="Regular;21" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" enableWrapAround="1"/>
-		<widget name="unpacklist" position="35,630" size="1214,30" zPosition="5" font="Regular;21" backgroundColor="grey" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" enableWrapAround="1"/>
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="20,685" size="35,30" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="240,685" size="35,30" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="460,685" size="35,30" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="700,685" size="35,30" alphatest="blend" />
-		<eLabel text="Löschen" position="60,690" size="180,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-		<eLabel text="AddDownload" position="280,690" size="180,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-		<eLabel text="Start/Stop Download" position="500,690" size="200,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-		<eLabel text="Einstellung" position="740,690" size="160,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-	</screen>
-	<screen name="mediaInfoSetup" position="center,center" size="1280,720" title="MediaInfo Setup" flags="wfNoBorder">
-		<ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/cooltvbg.png" backgroundColor="grey" transparent="1" />
-		<eLabel text="MediaInfo Setup" position="40,53" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1" />
-		<widget name="config" position="center,105" size="1000,300" scrollbarMode="showOnDemand" foregroundColor="black" font="Regular;23" enableWrapAround="1" backgroundColor="grey" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" transparent="0" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="120,685" size="35,30" alphatest="blend" />
-		<ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="340,685" size="35,30" alphatest="blend" />
-		<eLabel text="Cancel" position="160,690" size="180,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-		<eLabel text="Save" position="380,690" size="180,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-	</screen>
+    </widget>
+  </screen>
+  <screen name="NetworkMountsMenu" position="center,center" size="560,460">
+    <widget name="menulist" position="10,25" size="540,90" zPosition="10" scrollbarMode="showOnDemand" />
+    <ePixmap pixmap="Nobile.HDF.Mod/menu/net.png" position="center,center" size="250,180" alphatest="on" />
+    <widget source="introduction" render="Label" position="10,210" size="540,300" font="Regular;22" halign="center" valign="center" zPosition="3" transparent="1" />
+    <eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Regular;18" halign="right" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <screen name="NetworkServiceSetup" position="center,center" size="560,460">
+    <widget name="lab1" position="20,90" size="150,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labactive" position="180,90" size="250,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+    <widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+    <panel name="MenuBlue1Panel" />
+  </screen>
+  <screen name="NetworkFtp" position="center,center" size="560,460">
+    <widget name="lab1" position="20,30" size="300,80" font="Regular;20" valign="center" transparent="1" />
+    <widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+    <widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+    <panel name="MenuGreen1Panel" />
+  </screen>
+  <screen name="NetworkNfs" position="center,center" size="560,460">
+    <widget name="lab1" position="20,50" size="200,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labactive" position="220,50" size="150,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="lab2" position="20,100" size="200,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="220,100" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+    <widget name="labrun" position="220,100" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+  </screen>
+  <screen name="NetworkOpenvpn" position="center,center" size="560,460">
+    <widget name="lab1" position="20,90" size="150,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labactive" position="180,90" size="250,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="lab2" position="20,160" size="150,30" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="180,160" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+    <widget name="labrun" position="180,160" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+    <panel name="MenuBlue1Panel" />
+  </screen>
+  <screen name="NetworkInadyn" position="center,center" size="560,460">
+    <widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labdisabled" position="110,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labactive" position="110,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="360,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="360,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="time" position="10,50" size="330,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labtime" position="340,50" size="100,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="username" position="10,100" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labuser" position="160,100" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="password" position="10,150" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labpass" position="160,150" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="alias" position="10,200" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labalias" position="160,200" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="sinactive" position="10,250" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="sactive" position="10,250" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="system" position="50,250" size="100,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labsys" position="160,250" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+    <panel name="MenuBlue1Panel" />
+  </screen>
+  <screen name="NetworkInadynSetup" position="center,center" size="560,460">
+    <widget name="config" position="10,50" size="540,240" scrollbarMode="showOnDemand" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="270,500" zPosition="1" size="440,350" transparent="1" alphatest="on" />
+    <panel name="MenuRed1Panel" />
+    <ePixmap pixmap="skin_default/buttons/key_text.png" position="10,433" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+  </screen>
+  <screen name="InadynLog" position="center,center" size="590,460">
+    <widget name="infotext" position="10,10" size="590,410" font="Console;16" />
+  </screen>
+  <screen name="NetworkTelnet" position="center,center" size="560,460">
+    <widget name="lab1" position="20,30" size="300,80" font="Regular;20" valign="center" transparent="1" />
+    <widget name="lab2" position="20,150" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labstop" position="170,150" size="100,30" font="Regular;20" valign="center" halign="center" backgroundColor="red" />
+    <widget name="labrun" position="170,150" size="100,30" zPosition="1" font="Regular;20" valign="center" halign="center" backgroundColor="green" />
+    <panel name="MenuGreen1Panel" />
+  </screen>
+  <screen name="NetworkuShare" position="center,center" size="590,460">
+    <widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labdisabled" position="110,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labactive" position="110,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="390,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="390,310" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="username" position="10,50" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labuser" position="160,50" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="iface" position="10,90" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labiface" position="160,90" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="port" position="10,130" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labport" position="160,130" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="telnetport" position="10,170" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labtelnetport" position="160,170" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="sharedir" position="10,210" size="150,60" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labsharedir" position="160,210" size="310,80" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="web" position="10,340" size="180,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="webinactive" position="200,340" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="webactive" position="200,340" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="telnet" position="10,400" size="180,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="telnetinactive" position="200,400" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="telnetactive" position="200,400" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="xbox" position="250,340" size="200,60" font="Regular;20" valign="center" transparent="1" />
+    <widget name="xboxinactive" position="470,340" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="xboxactive" position="470,340" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="dlna" position="250,400" size="200,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="dlnainactive" position="470,400" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="dlnaactive" position="470,400" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+    <panel name="MenuBlue1Panel" />
+    <eLabel backgroundColor="darkgrey" position="0,430" size="590,2" zPosition="1" />
+    <widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Regular;18" halign="right" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <ePixmap pixmap="skin_default/logos/hdf.png" position="2,435" size="210,25" alphatest="on" />
+  </screen>
+  <screen name="NetworkuShareSetup" position="center,center" size="560,460">
+    <widget name="config" position="10,50" size="420,240" scrollbarMode="showOnDemand" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="500,430" size="440,350" transparent="1" alphatest="on" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <ePixmap pixmap="skin_default/buttons/key_text.png" position="30,400" zPosition="4" size="35,25" alphatest="on" transparent="1" />
+  </screen>
+  <screen name="NetworkInadynLog" position="center,center" size="560,460">
+    <widget name="infotext" position="20,20" font="Regular;20" size="500,400" scrollbarMode="showOnDemand" />
+    <ePixmap pixmap="skin_default/buttons/key-exit.png" position="10,426" zPosition="4" size="65,45" alphatest="on" transparent="1" />
+  </screen>
+  <screen name="NetworkMiniDLNA" position="center,center" size="590,460">
+    <widget name="autostart" position="10,0" size="100,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labdisabled" position="280,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labactive" position="280,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="status" position="240,0" size="150,24" font="Regular;20" valign="center" transparent="0" />
+    <widget name="labstop" position="430,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="red" zPosition="1" />
+    <widget name="labrun" position="430,400" size="100,24" font="Regular;20" valign="center" halign="center" backgroundColor="green" zPosition="2" />
+    <widget name="username" position="10,50" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labuser" position="160,50" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="iface" position="10,90" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labiface" position="160,90" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="port" position="10,130" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labport" position="160,130" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="serialno" position="10,170" size="150,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labserialno" position="160,170" size="310,30" font="Regular;20" valign="center" backgroundColor="un4d5375" />
+    <widget name="sharedir" position="10,210" size="150,60" font="Regular;20" valign="center" transparent="1" />
+    <widget name="labsharedir" position="160,210" size="310,70" font="Regular;20" valign="top" backgroundColor="un4d5375" />
+    <widget name="inotify" position="10,300" size="180,60" font="Regular;20" valign="center" transparent="1" />
+    <widget name="inotifyinactive" position="200,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="inotifyactive" position="200,300" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="tivo" position="10,360" size="180,60" font="Regular;20" valign="center" transparent="1" />
+    <widget name="tivoinactive" position="200,360" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="tivoactive" position="200,360" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <widget name="dlna" position="250,300" size="200,30" font="Regular;20" valign="center" transparent="1" />
+    <widget name="dlnainactive" position="470,300" zPosition="1" pixmap="skin_default/icons/lock_off.png" size="32,32" alphatest="on" />
+    <widget name="dlnaactive" position="470,300" zPosition="2" pixmap="skin_default/icons/lock_on.png" size="32,32" alphatest="on" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <panel name="MenuYellow1Panel" />
+    <panel name="MenuBlue1Panel" />
+    <widget source="global.CurrentTime" render="Label" position="500,435" size="55,22" font="Enigma;18" halign="right" transparent="1" valign="center" zPosition="3">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+  </screen>
+  <screen name="MiniDLNASetup" position="center,center" size="560,460">
+    <widget name="config" position="10,10" size="420,240" scrollbarMode="showOnDemand" />
+    <widget name="HelpWindow" pixmap="skin_default/vkey_icon.png" position="440,390" size="440,350" transparent="1" alphatest="on" />
+    <panel name="MenuRed1Panel" />
+    <panel name="MenuGreen1Panel" />
+    <!--ePixmap pixmap="skin_default/buttons/key_text.png" position="320,366" zPosition="4" size="35,25" alphatest="on" transparent="1" /-->
+  </screen>
+  <screen name="ShowClock" position="1023,23" size="220,60" zPosition="10" backgroundColor="transpWhite" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="48,4" size="80,25" font="Bold; 24" halign="right" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="128,4" size="45,25" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
+      <convert type="ClockToText">Format::%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="0,29" size="220,30" font="Regular;19" halign="center" valign="center" foregroundColor="darkgrey3" transparent="1" noWrap="1" backgroundColor="transpWhite">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="ShowClockPositioner" position="1023,23" size="220,60" zPosition="10" backgroundColor="transpWhite" flags="wfNoBorder">
+    <widget source="global.CurrentTime" render="Label" position="48,4" size="80,25" font="Bold; 24" halign="right" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="128,4" size="45,25" font="Regular; 24" halign="left" valign="center" transparent="1" foregroundColor="black" backgroundColor="transpWhite">
+      <convert type="ClockToText">Format::%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="0,29" size="220,30" font="Regular;19" halign="center" valign="center" foregroundColor="darkgrey3" transparent="1" noWrap="1" backgroundColor="transpWhite">
+      <convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
+    </widget>
+  </screen>
+  <screen name="ShowClockSetup" position="center,center" size="840,570" title="Show Clock Setup" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="833,558" pixmap="Nobile.HDF.Mod/menu/menubg.png" />
+    <widget source="global.CurrentTime" render="Label" position="40,25" size="80,25" font="Regular;23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <eLabel text="Setup" position="115,470" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
+    <widget source="Title" render="Label" position="30,60" size="780,32" font="Regular;26" backgroundColor="background" transparent="1" />
+    <!-- <eLabel text="Einstellung der Uhrzeit-Anzeige" position="30,60" size="780,32" font="Regular; 26" backgroundColor="background" transparent="1" /> -->
+    <eLabel position="30,95" size="780,2" backgroundColor="grey" />
+    <widget name="config" position="30,105" size="780,195" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
+    <!-- <widget name="config" position="30,105" size="780,355" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background" transparent="1" /> -->
+    <eLabel position="30,308" size="780,2" backgroundColor="grey" />
+    <widget source="help" render="Label" position="30,316" size="780,140" font="Regular;21" transparent="1" backgroundColor="grey" zPosition="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="15,520" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="210,520" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="405,520" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="590,520" size="35,27" alphatest="blend" />
+    <widget source="key_red" render="Label" position="50,523" size="150,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
+    <widget source="key_green" render="Label" position="245,523" size="152,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
+    <widget source="key_yellow" render="Label" position="440,523" size="139,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
+    <widget source="key_blue" render="Label" position="624,523" size="191,26" zPosition="1" font="Regular;22" halign="left" backgroundColor="grey" transparent="1" foregroundColor="black" />
+  </screen>
+  <!-- Enigma Restart -->
+  <screen name="QuitMainloopScreen" position="fill" backgroundColor="black" flags="wfNoBorder">
+    <widget name="text" position="center,600" size="720,100" font="Bold;24" halign="center" transparent="1" />
+  </screen>
+  <!-- Screensaver -->
+  <screen name="Screensaver" position="fill" flags="wfNoBorder">
+    <eLabel position="fill" backgroundColor="un54111112" zPosition="0" />
+    <widget name="picture" pixmap="distro-logo.png" position="0,0" size="1050,160" alphatest="on" zPosition="1" />
+  </screen>
+  <!-- MediaInfo -->
+  <screen name="mediaInfo" position="center,center" size="1280,720" title="MediaInfo" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/cooltvbg.png" backgroundColor="grey" transparent="1" />
+    <eLabel text="MediaInfo" position="40,53" size="370,26" zPosition="1" font="Regular;24" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1" />
+    <widget name="pname" position="180,53" size="1000,30" zPosition="0" font="Regular;24" halign="right" transparent="1" foregroundColor="white" backgroundColor="grey" />
+    <widget name="pinfo" position="150,96" size="1214,30" zPosition="0" font="Regular;26" transparent="1" foregroundColor="black" />
+    <widget name="head" position="35,140" size="1214,25" backgroundColor="unaaaaaa" zPosition="5" foregroundColor="black" font="Regular;23" halign="center" />
+    <widget name="head2" position="40,590" size="1214,25" transparent="1" zPosition="1" foregroundColor="white" font="Regular;22" halign="left" />
+    <widget name="dllist" position="35,170" size="1214,366" backgroundColor="unaaaaaa" zPosition="5" foregroundColor="black" font="Regular;21" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" enableWrapAround="1" />
+    <widget name="unpacklist" position="35,630" size="1214,30" zPosition="5" font="Regular;21" backgroundColor="grey" scrollbarMode="showOnDemand" transparent="0" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" enableWrapAround="1" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="20,685" size="35,30" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="240,685" size="35,30" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="460,685" size="35,30" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="700,685" size="35,30" alphatest="blend" />
+    <eLabel text="Löschen" position="60,690" size="180,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <eLabel text="AddDownload" position="280,690" size="180,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <eLabel text="Start/Stop Download" position="500,690" size="200,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <eLabel text="Einstellung" position="740,690" size="160,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+  </screen>
+  <screen name="mediaInfoSetup" position="center,center" size="1280,720" title="MediaInfo Setup" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/cooltvbg.png" backgroundColor="grey" transparent="1" />
+    <eLabel text="MediaInfo Setup" position="40,53" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1" />
+    <widget name="config" position="center,105" size="1000,300" scrollbarMode="showOnDemand" foregroundColor="black" font="Regular;23" enableWrapAround="1" backgroundColor="grey" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" transparent="0" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="120,685" size="35,30" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="340,685" size="35,30" alphatest="blend" />
+    <eLabel text="Cancel" position="160,690" size="180,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <eLabel text="Save" position="380,690" size="180,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+  </screen>
   <screen name="Seekbar" position="372,331" size="560,160" title="Seekbar">
     <widget name="config" position="10,10" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/sel.png" size="540,100" />
     <widget alphatest="on" name="cursor" pixmap="skin_default/position_arrow.png" position="0,125" size="8,18" />
