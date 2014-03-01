@@ -5202,15 +5202,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="Cancel" position="160,690" size="180,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <eLabel text="Save" position="380,690" size="180,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
-  <screen name="Seekbar" position="372,331" size="560,160" title="Seekbar">
-    <widget name="config" position="10,10" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/sel.png" size="540,100" />
-    <widget alphatest="on" name="cursor" pixmap="skin_default/position_arrow.png" position="0,125" size="8,18" />
-    <widget foregroundColor="un20224f" pointer="skin_default/position_pointer.png:540,0" position="145,140" render="PositionGauge" size="270,10" source="session.CurrentService" transparent="1" zPosition="2">
-      <convert type="ServicePosition">Gauge</convert>
-    </widget>
-    <widget backgroundColor="un4e5a74" font="Regular;20" halign="left" name="time" position="50,130" size="100,20" transparent="1" />
-    <widget backgroundColor="un4e5a74" font="Regular;20" foregroundColor="orange" halign="right" position="420,130" render="Label" size="90,24" source="session.CurrentService" transparent="1">
-      <convert type="ServicePosition">Length</convert>
-    </widget>
+  <screen name="Seekbar" position="center,40" size="560,55" flags="wfNoBorder">
+		<widget name="cursor" position="0,15" size="8,18" pixmap="position_arrow.png" alphatest="on" />
+		<widget source="session.CurrentService" render="PositionGauge" position="145,30" size="270,10" zPosition="2" pointer="position_pointer.png:540,0" transparent="1" foregroundColor="grey">
+			<convert type="ServicePosition">Gauge</convert>
+		</widget>
+		<widget name="time" position="50,25" size="100,20" font="Regular;20" halign="left" backgroundColor="black" transparent="1" />
+		<widget source="session.CurrentService" render="Label" position="420,25" size="90,24" font="Regular;20" halign="right" backgroundColor="black" transparent="1">
+			<convert type="ServicePosition">Length</convert>
+		</widget>
   </screen>
 </skin>
