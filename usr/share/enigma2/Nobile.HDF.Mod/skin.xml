@@ -97,7 +97,8 @@
     </borderset>
   </windowstyle>
   <!-- Main screen colors (id=1 LCD) -->
-  <windowstyle type="skinned" id="1">
+  <!-- blinking display with xp1000 bases stb -->
+  <!--windowstyle type="skinned" id="1">
     <color name="Background" color="un6c" />
     <color name="LabelForeground" color="una0a0a0" />
     <color name="ListboxBackground" color="un6c" />
@@ -110,7 +111,7 @@
     <color name="ListboxMarkedAndSelectedForeground" color="una0a0a0" />
     <color name="WindowTitleForeground" color="una0a0a0" />
     <color name="WindowTitleBackground" color="un6c" />
-  </windowstyle>
+  </windowstyle-->
   <screen name="MenuRed1Panel">
     <ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on" />
     <widget name="key_red" position="0,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="EMCRecording" transparent="1" />
