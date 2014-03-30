@@ -112,6 +112,22 @@
     <color name="WindowTitleForeground" color="una0a0a0" />
     <color name="WindowTitleBackground" color="un6c" />
   </windowstyle-->
+	<screen name="FullscreenRed1Panel">
+		<ePixmap pixmap="buttons/key_red.png" position="90,686" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_red" position="130,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+	</screen>
+	<screen name="FullscreenGreen1Panel">
+		<ePixmap pixmap="buttons/key_green.png" position="380,686" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_green" position="420,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+	</screen>
+	<screen name="FullscreenYellow1Panel">
+		<ePixmap pixmap="buttons/key_yellow.png" position="670,686" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_yellow" position="710,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+	</screen>
+	<screen name="FullscreenBlue1Panel">
+		<ePixmap pixmap="buttons/key_blue.png" position="960,686" size="35,25" alphatest="blend" transparent="1" />
+		<widget name="key_blue" position="1000,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+	</screen>
   <screen name="MenuRed1Panel">
     <ePixmap pixmap="buttons/red.png" position="0,e-40" size="140,40" alphatest="on" />
     <widget name="key_red" position="0,e-50" zPosition="1" size="140,50" font="Regular;20" halign="center" valign="center" backgroundColor="EMCRecording" transparent="1" />
@@ -315,13 +331,13 @@
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget name="list" position="255,76" size="640,54" foregroundColor="black" backgroundColor="grey" transparent="1" itemHeight="27" zPosition="2" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="208,132" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/key_red.png" position="208,132" size="35,27" alphatest="blend" />
     <widget name="key_red" position="251,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="392,132" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/key_green.png" position="392,132" size="35,27" alphatest="blend" />
     <widget name="key_green" position="436,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="591,132" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/key_yellow.png" position="591,132" size="35,27" alphatest="blend" />
     <widget name="key_yellow" position="637,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1" />
-    <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="777,132" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/key_blue.png" position="777,132" size="35,27" alphatest="blend" />
     <widget name="key_blue" position="822,135" zPosition="1" size="130,20" font="Regular; 20" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <!--InfoBar-->
@@ -1472,7 +1488,7 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget name="UnhandledKeyPixmap" pixmap="Nobile.HDF.Mod/unhand.png" position="0,0" size="34,45" alphatest="off" />
     <ePixmap position="0,0" size="64,64" pixmap="Nobile.HDF.Mod/unhand.png" transparent="1" />
   </screen>
-  <screen name="EPGSelection" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
+  <!--screen name="EPGSelection" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg_event.png" />
     <widget source="global.CurrentTime" render="Label" position="20,25" size="80,25" font="Regular;25" foregroundColor="white" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Default</convert>
@@ -1498,7 +1514,26 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget name="key_green" position="340,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_yellow" position="600,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_blue" position="880,563" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
-  </screen>
+  </screen-->
+	<screen name="EPGSelection" position="0,0" size="1280,720" backgroundColor="black" transparent="0" flags="wfNoBorder">
+		<panel name="FullscreenTopPanel" />
+		<widget source="Service" render="PiconBg" position="18,8" size="104,63" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd"  />
+		<widget source="Service" render="Picon" position="20,9" size="100,60" zPosition="5" alphatest="blend" backgroundColor="fullscreen-topbar-bkgrnd" >
+			<convert type="ServiceName">Reference</convert>
+		</widget>
+		<widget source="Title" render="Label" position="135,25" size="800,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<panel name="FullscreenPIGPanel" />
+		<widget name="number" position="20,82" size="660,592" zPosition="5" backgroundColor="transparent" transparent="0" font="Regular;48" borderColor="black" borderWidth="2" valign="center" halign="center" />
+		<widget name="list" position="20,82" size="660,592" zPosition="3" transparent="0" scrollbarMode="showOnDemand" enableWrapAround="1" />
+		<widget source="Event" render="Label" position="695,410" size="575,250" font="Regular;22" backgroundColor="black" foregroundColor="window-fg" transparent="0" valign="top" zPosition="2">
+			<convert type="EventName">FullDescription</convert>
+		</widget>
+		<ePixmap pixmap="buttons/key_menu.png" position="20,686" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<panel name="FullscreenRed1Panel" />
+		<panel name="FullscreenGreen1Panel" />
+		<panel name="FullscreenYellow1Panel" />
+		<panel name="FullscreenBlue1Panel" />
+	</screen>
   <screen name="EPGSelectionMulti" position="center,center" size="1100,605" title="EPG Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
     <widget source="global.CurrentTime" render="Label" position="20,20" size="80,25" font="Regular;23" foregroundColor="black" backgroundColor="white" transparent="1">
@@ -1530,6 +1565,31 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget name="key_yellow" position="600,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <widget name="key_blue" position="880,573" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
+	<screen name="GraphicalInfoBarEPG" position="0,e-200" size="1280,200" backgroundColor="black" transparent="0" flags="wfNoBorder">
+		<ePixmap pixmap="screens/fs-bg-top-wizzard.png" position="0,0" size="1280,50" zPosition="-1" />
+		<widget source="global.CurrentTime" render="Label" position="1160,7" size="100,28" font="Regular;24" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Default</convert>
+		</widget>
+		<widget source="global.CurrentTime" render="Label" position="910,27" size="350,25" font="Regular;18" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="infobar-bkgrnd" halign="right" transparent="1" zPosition="1">
+			<convert type="ClockToText">Date</convert>
+		</widget>
+		<widget source="Title" render="Label" position="20,10" size="850,43" font="Boldit;32" transparent="1" foregroundColor="fullscreen-topbar-frgrnd" backgroundColor="fullscreen-topbar-bkgrnd" zPosition="1" />
+		<widget name="lab1" position="0,50" size="1280,115" font="Regular;24" halign="center" valign="center" zPosition="20" backgroundColor="black" transparent="0" />
+		<widget name="timeline_text" position="0,50" size="1280,30" backgroundColor="black" foregroundColor="orange" transparent="1" zPosition="0" />
+		<widget name="bouquetlist" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="2" transparent="0" />
+		<widget name="list" position="0,75" size="1280,85" backgroundColor="black" scrollbarMode="showNever" zPosition="1" transparent="0" EntryFontWrap="no"/>
+		<widget name="timeline_now" position="0,75" zPosition="3" size="19,85" pixmap="epg/timeline-now.png" alphatest="on" />
+		<ePixmap pixmap="buttons/key_menu.png" position="20,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<ePixmap pixmap="buttons/key_red.png" position="90,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_red" position="130,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="buttons/key_green.png" position="380,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_green" position="420,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="buttons/key_yellow.png" position="670,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_yellow" position="710,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="buttons/key_blue.png" position="960,166" size="35,25" alphatest="blend" transparent="1" zPosition="1" />
+		<widget name="key_blue" position="1000,166" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
+		<ePixmap pixmap="screens/fs-bg-bot.png" position="0,160" size="1280,40" zPosition="-1" />
+	</screen>
   <screen name="EventView" position="center,center" size="1047,542" title="Eventview" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1047,542" pixmap="Nobile.HDF.Mod/menu/eventview.png" backgroundColor="white" transparent="1" />
     <widget source="global.CurrentTime" render="Label" position="928,16" size="80,25" font="Bold;22" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
