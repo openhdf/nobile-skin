@@ -98,20 +98,20 @@
   </windowstyle>
   <!-- Main screen colors (id=1 LCD) -->
   <!-- blinking display with xp1000 bases stb -->
-  <!--windowstyle type="skinned" id="1">
-    <color name="Background" color="un6c" />
-    <color name="LabelForeground" color="una0a0a0" />
-    <color name="ListboxBackground" color="un6c" />
-    <color name="ListboxForeground" color="una0a0a0" />
-    <color name="ListboxSelectedBackground" color="un6c" />
-    <color name="ListboxSelectedForeground" color="una0a0a0" />
-    <color name="ListboxMarkedBackground" color="un6c" />
-    <color name="ListboxMarkedForeground" color="una0a0a0" />
-    <color name="ListboxMarkedAndSelectedBackground" color="un6c" />
-    <color name="ListboxMarkedAndSelectedForeground" color="una0a0a0" />
-    <color name="WindowTitleForeground" color="una0a0a0" />
-    <color name="WindowTitleBackground" color="un6c" />
-  </windowstyle-->
+  <windowstyle type="skinned" id="1">
+    <color name="Background" color="black" />
+    <color name="LabelForeground" color="foreground" />
+    <color name="ListboxBackground" color="black" />
+    <color name="ListboxForeground" color="foreground" />
+    <color name="ListboxSelectedBackground" color="black" />
+    <color name="ListboxSelectedForeground" color="foreground" />
+    <color name="ListboxMarkedBackground" color="black" />
+    <color name="ListboxMarkedForeground" color="foreground" />
+    <color name="ListboxMarkedAndSelectedBackground" color="black" />
+    <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
+    <color name="WindowTitleForeground" color="foreground" />
+    <color name="WindowTitleBackground" color="black" />
+  </windowstyle>
 	<screen name="FullscreenRed1Panel">
 		<ePixmap pixmap="buttons/key_red.png" position="90,686" size="35,25" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="130,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
@@ -4365,150 +4365,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
     <widget name="config" position="540,370" size="540,180" itemHeight="30" zPosition="14" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" backgroundColor="background" transparent="1" />
   </screen>
-  <!-- LCD screen (channelselection) -->
-  <screen name="ChannelSelection_summary" position="0,0" size="320,240" backgroundColor="black" id="1">
-    <widget source="parent.ServiceEvent" render="Label" backgroundColor="black" foregroundColor="white" position="2,96" size="316,85" font="Bold;48" halign="center" valign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" position="2,200" size="316,20" borderWidth="3" backgroundColor="dark">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="2,0" size="316,50" font="Bold;40" halign="center" valign="center" foregroundColor="white" backgroundColor="black">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-  </screen>
-  <!-- LCD screen (main) -->
-  <screen name="InfoBarSummary" backgroundColor="black" position="0,0" size="320,240" id="1">
-    <widget source="session.CurrentService" render="Label" backgroundColor="black" foregroundColor="white" position="115,5" size="205,60" font="Bold;30" halign="left" valign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Picon" backgroundColor="black" position="5,5" zPosition="1" size="100,60" alphatest="on">
-      <convert type="ServiceName">Reference</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" backgroundColor="black" position="2,96" size="316,25" borderWidth="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="0,135" size="320,105" backgroundColor="black" foregroundColor="white" font="Bold;105" halign="center" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-  </screen>
-  <!-- LCD screen (movieplayer) -->
-  <screen name="InfoBarMoviePlayerSummary" backgroundColor="black" position="0,0" size="320,240" id="1">
-    <widget source="session.CurrentService" render="Label" backgroundColor="black" foregroundColor="white" position="6,0" size="120,25" font="Bold;24" halign="center" valign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Progress" position="16,27" size="100,5" borderWidth="1">
-      <convert type="ServicePosition">Position</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="6,32" size="120,32" backgroundColor="black" foregroundColor="white" font="Bold;32" halign="center" valign="center">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-    <widget source="session.RecordState" render="FixedLabel" text="" position="6,32" zPosition="1" size="120,32">
-      <convert type="ConfigEntryTest">config.usage.blinking_display_clock_during_recording,True,CheckSourceBoolean</convert>
-      <convert type="ConditionalShowHide">Blink</convert>
-    </widget>
-  </screen>
-  <!-- LCD screen (ChoiceBox) -->
-  <screen name="ChoiceBox_summary" position="0,0" backgroundColor="black" size="320,240" id="1">
-    <widget source="parent.summary_list" render="Label" position="2,0" backgroundColor="black" foregroundColor="white" size="316,200" font="Bold;100" />
-  </screen>
-  <!-- LCD screen (MessageBox) -->
-  <screen name="MessageBox_summary" position="0,0" size="320,240" id="1">
-    <widget source="parent.Text" render="Label" position="2,0" size="316,200" font="LCD;48" halign="center" valign="center" />
-    <widget source="parent.selectedChoice" render="Label" position="6,205" size="120,30" font="LCD;28" halign="center" valign="center" />
-  </screen>
-  <!-- LCD screen (menus) -->
-  <screen name="MenuSummary" position="0,0" size="320,240" backgroundColor="black" id="1">
-    <widget source="parent.title" backgroundColor="black" foregroundColor="white" render="Label" position="2,0" size="316,32" font="Bold;30" halign="center" valign="center" />
-    <widget source="parent.menu" render="Label" position="6,32" size="316,32" backgroundColor="black" foregroundColor="white" font="Regular;30" halign="center" valign="center">
-      <convert type="StringListSelection" />
-    </widget>
-  </screen>
-  <!-- LCD screen (ServiceScan) -->
-  <screen name="ServiceScanSummary" position="0,0" size="320,240" id="1">
-    <widget name="Title" position="6,4" size="120,42" font="Regular;16" transparent="1" />
-    <widget name="Service" position="6,22" size="120,26" font="Regular;12" transparent="1" />
-    <widget name="scan_progress" position="6,50" zPosition="1" borderWidth="1" size="56,12" backgroundColor="dark" />
-  </screen>
-  <!-- LCD screen (setup) -->
-  <screen name="SetupSummary" position="0,0" size="132,64" id="1">
-    <widget source="SetupTitle" render="Label" position="6,0" size="120,16" font="Regular;12" />
-    <widget source="SetupEntry" render="Label" position="6,16" size="120,32" font="Regular;12" />
-    <widget source="SetupValue" render="Label" position="6,48" size="120,16" font="Regular;12" />
-  </screen>
-  <!-- LCD screen (misc) -->
-  <screen name="SimpleSummary" position="0,0" size="132,64" id="1">
-    <widget source="parent.Title" render="Label" position="6,0" size="120,64" font="Regular;16" halign="center" valign="center" />
-  </screen>
-  <!-- LCD screen (standby) -->
-  <screen name="StandbySummary" backgroundColor="black" position="0,0" size="320,240" id="1">
-    <widget source="global.CurrentTime" render="Label" position="0,20" size="320,200" backgroundColor="black" foregroundColor="white" font="Bold;120" halign="center" valign="top">
-      <convert type="ClockToText">Format:%H:%M</convert>
-    </widget>
-  </screen>
-  <!-- LCD screen (JobView) -->
-  <screen name="JobView_summary" position="0,0" size="320,240" id="1">
-    <widget source="parent.summary_job_name" render="Label" position="6,4" size="120,42" font="Regular;16" />
-    <widget source="parent.summary_job_task" render="Label" position="6,22" size="120,26" font="Regular;12" />
-    <widget source="parent.summary_job_progress" render="Progress" position="6,50" size="60,12" borderWidth="1" zPosition="1" />
-    <widget source="parent.summary_job_progress" render="Label" position="66,50" size="50,12" font="Regular;12" zPosition="2" halign="center" transparent="1">
-      <convert type="ProgressToText" />
-    </widget>
-  </screen>
-  <!-- LCD screen (Wizard) -->
-  <screen name="WizardSummary" position="0,0" size="320,240" id="1">
-    <widget source="text" render="Label" position="6,0" size="120,16" font="Regular;16" transparent="1" />
-    <widget source="parent.list" render="Label" position="6,18" size="120,46" font="Regular;12">
-      <convert type="StringListSelection" />
-    </widget>
-  </screen>
-  <!-- YAMP -->
-  <!--screen name="YampScreen" position="0,0" size="1280,720" flags="wfNoBorder">
-  <ePixmap name="bg" position="0,center" size="1334,720" pixmap="Nobile.HDF.Mod/menu/nbg_home.png" zPosition="-3" />
-  <widget name="title" position="66,34" size="610,50" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular; 40" valign="center" halign="left" />
-  <widget source="global.CurrentTime" render="Label" position="1118,16" size="150,30" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;24" valign="center" halign="right">
-	<convert type="ClockToText">Format:%-H:%M</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1099,53" size="169,20" backgroundColor="grey" foregroundColor="darkgrey3" transparent="1" zPosition="1" font="Regular;16" valign="center" halign="right">
-	<convert type="ClockToText">Format:%A, %d.%m.%Y</convert>
-  </widget>
-  <widget name="leftContentTitle" position="50,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
-  <widget name="filelist" position="50,135" size="560,312" foregroundColor="white" backgroundColor="black" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" itemHeight="22" />
-  <widget name="rightContentTitle" position="660,107" size="560,26" zPosition="5" foregroundColor="white" backgroundColor="black" font="Regular;22" halign="center" transparent="1" />
-  <widget name="playlist" position="660,135" size="560,312" foregroundColor="white" backgroundColor="black" selectionDisabled="1" scrollbarMode="showNever" selectionPixmap="/usr/lib/enigma2/python/Plugins/Extensions/YampMusicPlayer/images/sel.png" transparent="1" itemHeight="22" />
-  <widget name="songtitle" position="35,482" size="571,30" foregroundColor="white" backgroundColor="black" font="Regular; 24" valign="center" transparent="1" halign="center" zPosition="2" />
-  <widget source="session.CurrentService" render="Label" position="264,538" size="120,25" font="Regular; 22" foregroundColor="white" backgroundColor="black" halign="center" transparent="1" valign="top" zPosition="2">
-	<convert type="ServicePosition">Length</convert>
-  </widget>
-  <eLabel text="Artist" position="650,460" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-  <widget name="artist" position="760,460" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" noWrap="1" zPosition="2" />
-  <eLabel text="Album" position="650,490" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-  <widget name="album" position="760,490" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-  <eLabel text="Year" position="650,520" size="98,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-  <widget name="year" position="760,520" size="357,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;20" valign="center" zPosition="2" />
-  <eLabel text="Genre" position="650,550" size="98,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
-  <widget name="genre" position="760,550" size="357,25" font="Regular;20" foregroundColor="white" backgroundColor="black" transparent="1" valign="center" zPosition="2" />
-  <widget name="coverArt" pixmap="Nobile.HDF.Mod/no_coverArt.png" position="1100,440" size="145,145" transparent="1" alphatest="blend" zPosition="1" />
-  <widget source="session.CurrentService" render="Progress" position="100,521" size="440,10" foregroundColor="white" backgroundColor="white" borderWidth="2" borderColor="white" transparent="1" zPosition="2">
-	<convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="35,514" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="center" halign="right" zPosition="2">
-	<convert type="ServicePosition">Position</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Label" position="545,514" size="60,25" foregroundColor="white" backgroundColor="black" transparent="1" font="Regular;22" valign="top" halign="center" zPosition="2">
-	<convert type="ServicePosition">Remaining</convert>
-  </widget>
-  <widget name="repeat" pixmaps="Nobile.HDF.Mod/merlin/repeat_off.png,Nobile.HDF.Mod/merlin/repeat.png" position="1050,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
-  <widget name="shuffle" pixmaps="Nobile.HDF.Mod/merlin/shuffle_off.png,Nobile.HDF.Mod/merlin/shuffle.png" position="1130,605" size="71,50" zPosition="2" transparent="1" alphatest="on" />
-  <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="70,677" size="35,27" alphatest="blend" />
-  <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="360,677" size="35,27" alphatest="blend" />
-  <ePixmap pixmap="Nobile.HDF.Mod/buttons/yellow.png" position="650,677" size="35,27" alphatest="blend" zPosition="1" />
-  <ePixmap pixmap="Nobile.HDF.Mod/buttons/blue.png" position="940,677" size="35,27" alphatest="blend" />
-  <widget name="key_red" position="110,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-  <widget name="key_green" position="400,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-  <widget name="key_yellow" position="690,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-  <widget name="key_blue" position="980,680" size="240,27" zPosition="1" font="Regular;20" halign="left" foregroundColor="darkgrey2" backgroundColor="grey" transparent="1" />
-</screen-->
+  <!-- LCD screen -->
   <screen name="CoolChannelGuide" position="0,0" size="1280,720" title="Cool Channel Guide" backgroundColor="black" flags="wfNoBorder">
     <eLabel text="C  o  o  l    C  h  a  n  n  e  l    G  u  i  d  e" position="519,5" size="480,30" font="Regular;26" foregroundColor="black" backgroundColor="grey" shadowColor="#000000" halign="center" transparent="1" />
     <widget name="date" position="37,3" size="180,30" font="Regular;26" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
