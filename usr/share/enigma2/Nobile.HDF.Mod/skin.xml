@@ -98,7 +98,7 @@
   </windowstyle>
   <!-- Main screen colors (id=1 LCD) -->
   <!-- blinking display with xp1000 bases stb -->
-  <windowstyle type="skinned" id="1">
+  <!--windowstyle type="skinned" id="1">
     <color name="Background" color="black" />
     <color name="LabelForeground" color="foreground" />
     <color name="ListboxBackground" color="black" />
@@ -111,7 +111,7 @@
     <color name="ListboxMarkedAndSelectedForeground" color="foreground" />
     <color name="WindowTitleForeground" color="foreground" />
     <color name="WindowTitleBackground" color="black" />
-  </windowstyle>
+  </windowstyle-->
 	<screen name="FullscreenRed1Panel">
 		<ePixmap pixmap="buttons/key_red.png" position="90,686" size="35,25" alphatest="blend" transparent="1" />
 		<widget name="key_red" position="130,686" size="240,25" zPosition="1" font="Regular;20" halign="left" transparent="1" valign="center" noWrap="1" foregroundColor="menu-buttons-frgrnd" backgroundColor="fullscreen-buttons-bkgrnd" />
