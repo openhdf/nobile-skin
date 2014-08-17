@@ -164,6 +164,33 @@
     <ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend" />
     <eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
+  
+  <screen name="RestorePlugins" position="center,center" size="840,605" title="About" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
+    <widget source="Title" render="Label" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
+    <widget source="global.CurrentTime" render="Label" halign="left" position="40,25" size="80,25" font="Regular; 23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" transparent="1">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="menu" render="Listbox" position="40,127" size="740,480" scrollbarMode="showOnDemand" transparent="1" backgroundColorSelected="#688cbf" foregroundColorSelected="white">
+      <convert type="TemplatedMultiContent">
+				{"template": [
+					MultiContentEntryText(pos = (50, 3), size = (650, 23), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+					MultiContentEntryPixmapAlphaTest(pos = (5, 1), size = (24, 24), png = 1),
+					],
+					"fonts": [gFont("Regular", 19), gFont("Regular", 16)],
+					"itemHeight": 30
+				}
+		</convert>
+    </widget>
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="30,553" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="230,553" size="35,27" alphatest="blend" />
+    <widget name="key_red" position="80,556" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="280,556" size="200,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+ </screen>
+  
   <screen name="About" position="center,center" size=" 840,605" title="About" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="840,605" pixmap="Nobile.HDF.Mod/menu/menu_about.png" />
     <widget source="Title" render="Label" font="Bold; 40" position="265,520" size="550,55" transparent="1" halign="right" zPosition="1" foregroundColor="black" />
@@ -1422,7 +1449,8 @@ self.instance.move(ePoint((1280-wsizex)/2,(720-wsizey)/(count &gt; 7 and 2 or 3)
     <widget source="global.CurrentTime" render="Label" position="120,25" size="140,25" font="Regular;23" foregroundColor="white" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <widget source="title" render="Label" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget source="title" render="Label" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="grey" transparent="1">
+	</widget>
   </screen>
   <screen name="CrashlogAutoSubmitConfiguration" position="center,center" size="1100,605" title="CrashlogAutoSubmit settings" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,605" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
@@ -5135,8 +5163,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 			<convert type="ServicePosition">Length</convert>
 		</widget>
   </screen>
-  
- 
+
 	<!-- CoverFind 0.1 -->
 	<screen name="CoverFindScreen" position="0,0" size="1280,720" title="CoverFind" flags="wfNoBorder">
 		<eLabel position="0,0" size="1280,720" zPosition="-15" backgroundColor="tile_back" />
