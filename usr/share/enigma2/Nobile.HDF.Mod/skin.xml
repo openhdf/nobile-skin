@@ -4930,6 +4930,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 	<panel name="MenuRed3Panel" />
 	<panel name="MenuGreen3Panel" />
 	<panel name="MenuYellow3Panel" />
+    <panel name="MenuBlue1Panel" />
 	<widget name="lab1" position="20,50" size="200,30" font="Regular;20" valign="center" transparent="0"/>
 	<widget name="labactive" position="220,50" size="150,30" font="Regular;20" valign="center" transparent="0"/>
 	<widget name="lab2" position="20,100" size="200,30" font="Regular;20" valign="center" transparent="0"/>
