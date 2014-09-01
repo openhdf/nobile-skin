@@ -5161,7 +5161,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     <eLabel text="Start/Stop Download" position="500,690" size="200,26" zPosition="1" font="Regular;19" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <eLabel text="Einstellung" position="740,690" size="160,26" zPosition="1" font="Regular;20" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
-  <screen name="mediaInfoSetup" position="center,center" size="1280,720" title="MediaInfo Setup" flags="wfNoBorder">
+  <screen name="mediaInfoConfigScreen" position="center,center" size="1280,720" title="MediaInfo Setup" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/cooltvbg.png" backgroundColor="grey" transparent="1" />
     <eLabel text="MediaInfo Setup" position="40,53" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="grey" transparent="1" />
     <widget name="config" position="center,105" size="1000,300" scrollbarMode="showOnDemand" foregroundColor="black" font="Regular;23" enableWrapAround="1" backgroundColor="grey" selectionPixmap="Nobile.HDF.Mod/menu/menusel.png" transparent="0" />
