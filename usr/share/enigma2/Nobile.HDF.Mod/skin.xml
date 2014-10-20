@@ -5213,5 +5213,23 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
 		<widget name="key_green" position="365,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="tile_green_big" transparent="1" />
 		<widget name="key_yellow" position="660,635" size="260,25" zPosition="1" font="Regular;20" halign="left" foregroundColor="foreground" backgroundColor="tile_yellow_big" transparent="1" />
 	</screen>
- 
+
+	<!-- Hotkey -->
+	<screen name="HotkeySetup" position="center,center" size="600,550">
+		<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
+		<ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
+		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+		<widget name="list" position="0,45" size="580,400" scrollbarMode="showOnDemand"/>
+		<widget name="choosen" position="0,450" size="580,100" scrollbarMode="showOnDemand" foregroundColor="secondFG"/>
+		<widget name="description" position="0,480" size="580,60" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
+	</screen>
+	<screen name="HotkeySetupSelect" position="center,center" size="600,550">
+		<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="0,0" size="140,40" alphatest="on"/>
+		<ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="140,0" size="140,40" alphatest="on"/>
+		<widget name="key_red" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1"/>
+		<widget name="key_green" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1"/>
+		<widget name="list" position="0,45" size="580,400" scrollbarMode="showOnDemand"/>
+		<widget name="choosen" position="0,450" size="580,100" scrollbarMode="showOnDemand" foregroundColor="secondFG"/>
+		<widget name="description" position="0,480" size="580,60" font="Regular;18" halign="center" valign="center" transparent="0" zPosition="1" />
+	</screen>
 </skin>
