@@ -154,13 +154,14 @@
     <widget source="global.CurrentTime" render="Label" halign="left" position="120,25" size="140,25" font="Regular; 23" backgroundColor="black" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
-    <widget source="lab1" render="Label" position="29,86" size="369,35" font="Regular;30" transparent="1" zPosition="1" />
-    <widget source="lab2" render="Label" position="29,142" size="370,25" font="Regular;19" transparent="1" zPosition="1" />
-    <widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" />
-    <eLabel text="OPEN SOURCE" position="410,400" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/openhdf" position="410,438" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/oe-alliance" position="409,471" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
-    <widget name="AboutScrollLabel" position="27,233" size="379,350" font="Regular;20" scrollbarMode="showNever" transparent="1" zPosition="1" />
+    <widget source="lab1" render="Label" position="29,86" size="569,35" font="Regular;30" transparent="1" zPosition="1" />
+    <widget source="lab2" render="Label" position="29,142" size="370,25" font="Regular;22" transparent="1" zPosition="1" />
+    <!--widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" /-->
+    <!--eLabel text="OPEN SOURCE" position="410,400" size="460,28" font="Regular;22" transparent="1" zPosition="1" /-->
+	<eLabel text="http://www.hdfreaks.cc" position="460,390" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/openhdf" position="460,420" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/oe-alliance" position="460,450" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="27,190" size="420,350" font="Regular;20" scrollbarMode="showNever" transparent="1" zPosition="1" />
     <ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend" />
     <eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
@@ -202,11 +203,11 @@
     </widget>
     <widget source="lab1" render="Label" position="29,86" size="369,35" font="Regular;30" transparent="1" zPosition="1" />
     <widget source="lab2" render="Label" position="29,142" size="370,25" font="Regular;19" transparent="1" zPosition="1" />
-    <widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" />
+    <!--widget source="lab3" render="Label" position="30,187" size="369,25" font="Regular;19" transparent="1" zPosition="1" /-->
     <eLabel text="OPEN SOURCE" position="410,400" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
     <eLabel text="https://github.com/openhdf" position="410,438" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
     <eLabel text="https://github.com/oe-alliance" position="409,471" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
-    <widget name="AboutScrollLabel" position="27,243" size="399,310" scrollbarMode="showNever" font="Regular;20" transparent="1" zPosition="1" />
+    <widget name="AboutScrollLabel" position="27,213" size="399,310" scrollbarMode="showNever" font="Regular;20" transparent="1" zPosition="1" />
     <ePixmap position="31,561" size="70,30" pixmap="Nobile.HDF.Mod/buttons/info.png" alphatest="blend" />
     <eLabel text="Nobile.HDF.Mod by koivo and henry" position="440,565" size="370,26" zPosition="1" font="Regular;22" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
