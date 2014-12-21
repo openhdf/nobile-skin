@@ -1174,7 +1174,7 @@
     <widget name="menu" position="10,10" size="600,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" selectionPixmap="Nobile.HDF.Mod/menu/menusel_700_30.png" transparent="1" />
   </screen>
   <screen name="ChannelSelection" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/mainbg3.png" />
+    <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Nobile.HDF.Mod/menu/mainbg3_pig.png" />
     <widget source="global.CurrentTime" render="Label" position="1150,32" size="80,28" font="Bold;25" foregroundColor="darkgrey" backgroundColor="grey" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
@@ -1217,7 +1217,8 @@
     <widget name="key_blue" position="905,682" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
     <ePixmap position="1140,680" size="70,30" pixmap="Nobile.HDF.Mod/buttons/menu.png" alphatest="blend" />
     <eLabel text="Next " position="750,528" size="350,32" font="Bold;23" halign="left" foregroundColor="white" backgroundColor="darkgrey" transparent="1" />
-    <widget source="ServiceEvent" render="SingleEpgList" position="750,569" size="480,85" font="Bold;17" halign="left" transparent="1" noWrap="1" foregroundColor="black" backgroundColor="grey" zPosition="2" valign="top" />
+    <widget source="ServiceEvent" render="SingleEpgList" position="750,569" size="240,85" font="Bold;17" halign="left" transparent="1" noWrap="1" foregroundColor="black" backgroundColor="grey" zPosition="2" valign="top" />
+	<widget source="session.VideoPicture" render="Pig" position="1020,516" size="220,146" zPosition="1" backgroundColor="transparent" />
   </screen>
   <screen name="ChannelSelectionRadio" position="center,60" size="1100,470" title="Channel Selection" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-10" size="1100,470" pixmap="Nobile.HDF.Mod/menu/mainbg.png" />
