@@ -586,10 +586,19 @@
     </widget>
     <widget name="list" position="50,64" size="612,270" itemHeight="28" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="450" CoolFolderSize="455" CoolTitleColor="1" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="1" CoolProgressPos="900" CoolBarPos="500" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="Nobile.HDF.Mod/menu/sel700x30.png" DefaultColor="black" UnwatchedColor="black" WatchingColor="black" FinishedColor="black" RecordingColor="black" BackColorSel="black" foregroundColorSelected="white" backgroundColor="grey" foregroundColor="black" scrollbarMode="showNever" transparent="1" />
     <widget name="wait" position="50,290" size="612,50" zPosition="1" font="Regular;32" halign="center" valign="center" foregroundColor="black" backgroundColor="black" transparent="1" />
-    <widget source="session.VideoPicture" render="Pig" position="708,32" size="440,230" zPosition="3" backgroundColor="transparent" />
+    <widget source="session.VideoPicture" render="Pig" position="725,36" size="410,230" zPosition="3" backgroundColor="transparent" />
     <widget name="Cover" position="708,32" size="440,230" zPosition="5" alphatest="blend" />
-	<widget name="starsbg" position="500,367" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_empty.png" zPosition="4" alphatest="blend" />
-	<widget name="stars" position="500,367" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_filled.png" zPosition="5" transparent="1" />
+	<!-- this for imdb -->
+	<widget name="starsbg" position="750,350" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_empty.png" zPosition="4" alphatest="blend" />
+	<widget name="stars" position="750,350" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_filled.png" zPosition="5" transparent="1" />
+	<widget name="poster" position="1012,310" size="135,189" zPosition="4" alphatest="on" backgroundColor="grey" transparent="1" />
+	<widget name="overview" position="50,405" size="650,210" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" />
+	<widget name="runtime" position="740,410" size="250,25" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
+	<widget name="genre" position="740,440" size="250,25" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
+	<widget name="country" position="740,470" size="250,25" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
+	<widget name="ratinglabel" position="740,500" size="350,25" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
+	<widget name="release" position="740,530" size="400,25" font="Regular;18" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
+	<!-- end -->
     <widget source="Service" render="Label" position="250,375" size="485,25" font="Bold; 20" halign="left" valign="center" foregroundColor="black" backgroundColor="white" transparent="1">
       <convert type="EMCEventName">Name</convert>
     </widget>
@@ -690,19 +699,6 @@
       <convert type="ServiceInfo">IsMultichannel</convert>
       <convert type="ConditionalShowHide" />
     </widget>
-
-	<!-- this for imdb -->
-	<!--widget name="poster" position="200,500" size="60,89" zPosition="4" alphatest="on" backgroundColor="grey" transparent="1" />
-	<widget name="overview" position="810,330" size="400,225" font="Regular;19" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" />
-	<widget name="runtime" position="970,83" size="250,25" font="Regular;17" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
-	<widget name="genre" position="970,110" size="250,25" font="Regular;17" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
-	<widget name="country" position="970,137" size="250,25" font="Regular;17" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
-	<widget name="release" position="970,164" size="250,25" font="Regular;17" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
-	<widget name="ratinglabel" position="970,191" size="250,25" font="Regular;17" backgroundColor="grey" foregroundColor="darkgrey2" transparent="1" noWrap="1" />
-	<widget name="starsbg" position="970,220" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_empty.png" zPosition="2" alphatest="blend" />
-	<widget name="stars" position="970,220" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_filled.png" zPosition="3" transparent="1" /-->
-	<!-- this for orig, without imdb-infos -->
-
   </screen>
   <screen name="EnhancedMovieCenterMenu" position="center,center" size="680,500" flags="wfNoBorder" backgroundColor="transparent">
     <widget name="statusicon" position="30,center" size="40,40" zPosition="10" alphatest="on" pixmaps="skin_default/icons/play.png,skin_default/icons/pause.png,skin_default/icons/stop.png,skin_default/icons/forward.png,skin_default/icons/backward.png,skin_default/icons/slow.png,skin_default/icons/blank.png" />
