@@ -587,7 +587,7 @@
     <widget name="list" position="50,64" size="612,270" itemHeight="28" CoolFont="Regular;20" CoolSelectFont="Regular;20" CoolDateFont="Regular;20" CoolMoviePos="35" CoolMovieSize="450" CoolFolderSize="455" CoolTitleColor="1" CoolDatePos="1000" CoolDateWidth="122" CoolDateColor="0" CoolHighlightColor="1" CoolProgressPos="900" CoolBarPos="500" CoolBarHPos="8" CoolBarSize="55,10" CoolBarSizeSa="110,16" selectionPixmap="Nobile.HDF.Mod/menu/sel700x30.png" DefaultColor="black" UnwatchedColor="black" WatchingColor="black" FinishedColor="black" RecordingColor="black" BackColorSel="black" foregroundColorSelected="white" backgroundColor="grey" foregroundColor="black" scrollbarMode="showNever" transparent="1" />
     <widget name="wait" position="50,290" size="612,50" zPosition="1" font="Regular;32" halign="center" valign="center" foregroundColor="black" backgroundColor="black" transparent="1" />
     <widget source="session.VideoPicture" render="Pig" position="725,36" size="410,230" zPosition="3" backgroundColor="transparent" />
-    <widget name="Cover" position="708,32" size="440,230" zPosition="5" alphatest="blend" />
+    <widget name="Cover" position="708,32" size="440,235" zPosition="5" alphatest="blend" />
 	<!-- this for imdb -->
 	<widget name="starsbg" position="750,350" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_empty.png" zPosition="4" alphatest="blend" />
 	<widget name="stars" position="750,350" size="210,21" pixmap="Nobile.HDF.Mod/starsbar_filled.png" zPosition="5" transparent="1" />
