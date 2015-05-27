@@ -561,7 +561,7 @@
     <widget source="session.FrontendStatus" render="Progress" position="650,41" size="130,2" zPosition="4" pixmap="Nobile.HDF.Mod/bar_snr.png" transparent="1">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="session.FrontendStatus" render="Label" position="695,45" zPosition="4" size="50,24" halign="center" font="Regular;16" foregroundColor="black" backgroundColor="grey" transparent="1" valign="bottom">
+    <widget source="session.FrontendStatus" render="Label" position="645,45" zPosition="5" size="150,24" halign="center" font="Regular;16" foregroundColor="black" backgroundColor="grey" transparent="1" valign="bottom">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
     <!-- update check icon -->
