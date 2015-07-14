@@ -450,9 +450,6 @@
     <widget source="session.Event_Now" render="Label" position="400,46" size="650,40" font="Regular;32" halign="left" foregroundColor="black" backgroundColor="darkgrey" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-	<widget source="session.CurrentService" render="Label" position="450,10" size="660,60" font="Regular;12" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1">
-	  <convert type="CryptoInfo">VerboseInfo</convert>
-	</widget>
     <widget source="session.Event_Now" render="Label" position="268,100" size="100,20" font="Regular;17" halign="right" foregroundColor="black" backgroundColor="darkgrey" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">FOLLOW</convert>
