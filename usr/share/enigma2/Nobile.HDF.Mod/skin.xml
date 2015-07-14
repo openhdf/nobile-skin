@@ -1959,6 +1959,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2,orgpos.y()))
     </widget>
     <eLabel text="Reception Settings" position="115,495" size="700,45" font="Bold; 40" halign="right" foregroundColor="black" backgroundColor="white" transparent="1" />
     <widget name="config" position="30,80" size="780,380" itemHeight="30" scrollbarMode="showOnDemand" selectionPixmap="Nobile.HDF.Mod/menu/menusel_900_30.png" backgroundColor="background" transparent="1" />
+	<ePixmap pixmap="Nobile.HDF.Mod/buttons/red.png" position="30,515" size="35,27" alphatest="blend" />
+    <ePixmap pixmap="Nobile.HDF.Mod/buttons/green.png" position="200,515" size="35,27" alphatest="blend" />
+	<widget name="key_red" position="60,520" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
+    <widget name="key_green" position="230,520" size="200,26" zPosition="1" font="Regular;18" halign="left" foregroundColor="black" backgroundColor="grey" transparent="1" />
   </screen>
   <screen name="NumberZap" position="center,center" size="300,100" title="Channel">
     <widget name="channel" position="35,center" size="110,45" halign="left" font="Regular;30" />
