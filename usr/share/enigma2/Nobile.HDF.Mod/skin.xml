@@ -510,7 +510,7 @@
     <widget name="key_red" position="0,0" size="0,0" transparent="1" />
     <widget name="key_blue" position="0,0" size="0,0" transparent="1" />
   </screen>
-  <screen name="RecInfoBar" position="240,440" size="800,50" zPosition="-1" title="Records Info" backgroundColor="darkgrey2" flags="wfNoBorder" transparent="0">
+  <screen name="RecInfoBar" position="240,460" size="800,80" zPosition="-1" title="Records Info" backgroundColor="darkgrey2" flags="wfNoBorder" transparent="0">
     <widget source="session.RecordState" render="Pixmap" pixmap="skin_default/icons/record.png" position="40,36" zPosition="2" size="14,14" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
