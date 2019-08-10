@@ -97,6 +97,21 @@
     </borderset>
   </windowstyle>
   <!-- Main screen colors (id=1 LCD) -->
+  <windowstyle type="skinned" id="1">
+    <color name="Background" color="background_tux" />
+    <color name="LabelForeground" color="darkgrey2" />
+    <color name="ListboxBackground" color="background_tux" />
+    <color name="ListboxForeground" color="darkgrey2" />
+    <color name="ListboxSelectedBackground" color="darkgrey2" />
+    <color name="ListboxSelectedForeground" color="white" />
+    <color name="ListboxMarkedBackground" color="black" />
+    <color name="ListboxMarkedForeground" color="red" />
+    <color name="ListboxMarkedAndSelectedBackground" color="black" />
+    <color name="ListboxMarkedAndSelectedForeground" color="white" />
+    <color name="WindowTitleForeground" color="white" />
+    <color name="WindowTitleBackground" color="black" />
+  </windowstyle>
+  <!-- Main screen colors (id=1 LCD) -->
   <!-- blinking display with xp1000 bases stb -->
   <!--windowstyle type="skinned" id="1">
     <color name="Background" color="black" />
